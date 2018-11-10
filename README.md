@@ -2,15 +2,6 @@
 
 A Sign-In app to track attendance using QR codes
 
-## The Project Team
-
-### Team Lead
-Tommy Chao tchao770@csu.fullerton.edu
-#### Team Members
-  1. Member one
-  2. Member two
-  3. Member three
-
 ## Project Technologies
 
 This project will use:
