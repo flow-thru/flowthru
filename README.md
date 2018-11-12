@@ -14,9 +14,10 @@ Fluid is an application that allows event organizers to streamline the checking 
 </p>
 
 Fluid an open source project and is currently under development. There are many ways to participate in the development process. One can:
-- Submit bugs and feature requests
-- Participate in code reviews
-- Join in the conversation on slack
+- Submit [bugs and feature requests](https://github.com/CSUF-ACM/fluid/issues)
+- Participate in [code reviews](https://github.com/CSUF-ACM/fluid/pulls)
+- Join in the conversation on [Slack](https://acmcsuf.slack.com/messages/CCYLWSGH2)  
+
 Please refer to the [wiki](https://github.com/CSUF-ACM/fluid/wiki) for more information.
 
 ## Contributing
