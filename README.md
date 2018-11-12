@@ -7,41 +7,28 @@
 [![GitHub](https://img.shields.io/badge/chat-on%20slack-brightgreen.svg)](https://acmcsuf.slack.com/messages/CCYLWSGH2)
 
 
-A Sign-In app to track attendance using QR codes
+Fluid is an application that allows event organizers to streamline the checking process of their events. At the event, the organizer will be able to present application generated QR codes (either printed or digitally) and attendees will be able to scan the QR codes with their mobile device’s camera to check in.
 
-## Project Technologies
+<p align="center">
+  <img align="center" src="https://github.com/CSUF-ACM/fluid/blob/master/img/banner/fluid_banner_white_blue_upper.png" width="650"/>
+</p>
 
-This project will use:
-  * Technology 1 + resource url
-  * Technology 2 + resource url
+Fluid an open source project and is currently under development. There are many ways to participate in the development process. One can:
+- Submit bugs and feature requests
+- Participate in code reviews
+- Join in the conversation on slack
+Please refer to the [wiki](https://github.com/CSUF-ACM/fluid/wiki) for more information.
 
-## How to start helping
-*Please make sure you have git installed on your computer before you begin to help. To install git, please visit [Git](https://git-scm.com/downloads)*
+## Contributing
+If you would like to contribute, please refer to the [How to Contribute](https://github.com/CSUF-ACM/fluid/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
+- [How to build and run the application](https://github.com/CSUF-ACM/fluid/wiki/How-to-Contribute)
+- [Submitting pull requests](https://github.com/CSUF-ACM/fluid/wiki/How-to-Contribute)
+- [Coding guidelines](https://github.com/CSUF-ACM/fluid/wiki/Coding-Guidelines)
 
-To begin open your terminal (if using Linux/Mac) or git bash (if Windows), and navigate to the folder that you would like to save this project
+## Feedback
+- Request a new feature on [Github](https://github.com/CSUF-ACM/fluid/issues)
+- Submit a bug in [Github Issues](https://github.com/CSUF-ACM/fluid/issues)
+- Particiapte in the [Slack discussion](https://acmcsuf.slack.com/messages/CCYLWSGH2)
 
-*If you need help navigating the terminal please refer to this link: [Linux Command Tutorial](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)*
-
-use `git clone https://github.com/CSUF-ACM/sign-in-scanner-qr-code.git` to clone the repository into your folder
-
-To work on the project without disrupting the work of others or having your work disturbed, use `git branch <branchname>` to create a new branch, then use `git checkout <branchname>` to start working on your new branch
-
-### Saving your progress
-
-To check the status of your repository, seeing what files have been modified or added, use `git status` to print a status message
-
-After you've made some changes or created new files, use `git add <file>` or `git add *` to add all of your new/modified files to the stage
-
-Once those files have been added, use `git commit -m "Commit message here"` to create the commit, then use `git push origin <branchname>` to push your commit to the remote repository
-
-### Merging your work
-
-If you would like to have the code on your branch merged with the master, please submit a pull request on the git hub page https://github.com/CSUF-ACM/sign-in-scanner-qr-code/pulls
-
-If the pull request is accepted, your branch will be merged with the master branch
-
-### Additional help
-
-If you need some more help with git commands, please visit [Git Command Tutorial](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
-
-If you have any questions or need more help, please contact the Project Lead, Tommy Chao tchao770@csu.fullerton.edu
+## Related Projects
+This project is part of the California State University, Fullerton ACM Project Jam. If you'd like to contribute to or view other CSUF ACM projects please visit the [CSUF ACM Github](https://github.com/CSUF-ACM) 
