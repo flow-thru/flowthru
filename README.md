@@ -1,7 +1,10 @@
 # Fluid
-[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)](https://github.com/CSUF-ACM/fluid/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg)](https://github.com/CSUF-ACM/fluid/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/CSUF-ACM/fluid/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/CSUF-ACM/fluid.svg)](https://github.com/CSUF-ACM/fluid/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/CSUF-ACM/fluid.svg)](https://github.com/CSUF-ACM/fluid/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/CSUF-ACM/fluid.svg)
+[![GitHub contributors](https://img.shields.io/github/contributors/CSUF-ACM/fluid.svg)](https://github.com/CSUF-ACM/fluid/graphs/contributors)
+[![GitHub](https://img.shields.io/github/license/CSUF-ACM/fluid.svg)](https://github.com/CSUF-ACM/fluid/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/badge/chat-on%20slack-brightgreen.svg)](https://acmcsuf.slack.com/messages/CCYLWSGH2)
 
 
 A Sign-In app to track attendance using QR codes
