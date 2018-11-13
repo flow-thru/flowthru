@@ -1,4 +1,5 @@
 # Fluid
+[![Build Status](https://travis-ci.com/CSUF-ACM/fluid.svg?branch=master)](https://travis-ci.com/CSUF-ACM/fluid)
 [![GitHub issues](https://img.shields.io/github/issues/CSUF-ACM/fluid.svg)](https://github.com/CSUF-ACM/fluid/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/CSUF-ACM/fluid.svg)](https://github.com/CSUF-ACM/fluid/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+)
 ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/CSUF-ACM/fluid.svg)
