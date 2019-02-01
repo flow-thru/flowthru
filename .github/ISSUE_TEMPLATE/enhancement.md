@@ -1,13 +1,13 @@
 ---
-name: To do
+name: Enhancement
 about: Feature that is to be implemented
-title: 
-labels: 
-assignees: 
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
-## Feature Plan Description
+## Enhancement Description
 What is planned to be implemented and why? A clear and concise description of what is to be implemented.
 
 ## Approach

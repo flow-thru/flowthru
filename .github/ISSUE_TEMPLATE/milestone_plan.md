@@ -1,8 +1,12 @@
 ---
 name: Milestone Plan
 about: Captures work to be done within the given timeframe
+title: ''
+labels: ''
+assignees: ''
 
 ---
+
 ## Description
 What does this Milestone capture?
 
