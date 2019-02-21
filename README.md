@@ -14,6 +14,7 @@
     <a href="https://github.com/CSUF-ACM/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/CSUF-ACM/flow.svg" alt="Pull Requests"></a>
     <a href="https://acmcsuf.slack.com/messages/CCYLWSGH2"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
+
 Flow an open source project and is currently under development. There are many ways to participate in the development process. One can:
 - Submit [bugs and feature requests](https://github.com/CSUF-ACM/flow/issues)
 - Participate in [code reviews](https://github.com/CSUF-ACM/flow/pulls)
