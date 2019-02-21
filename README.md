@@ -1,13 +1,23 @@
-<p align="right"><a href="https://travis-ci.com/CSUF-ACM/flow"><img src="https://travis-ci.com/CSUF-ACM/flow.svg?branch=master" alt="Build Status"></a> <a href="https://github.com/CSUF-ACM/flow/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/CSUF-ACM/flow.svg" alt="Issues"></a> <a href="https://github.com/CSUF-ACM/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/CSUF-ACM/flow.svg" alt="Pull Requests"></a> </p>
-<p align="right"><a href="https://github.com/CSUF-ACM/flow/blob/master/LICENSE"><img src="https://img.shields.io/github/license/CSUF-ACM/flow.svg" alt="License"></a> <a href="https://acmcsuf.slack.com/messages/CCYLWSGH2"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a></p>
-<br><br>
-<p align="center">
-    <h1 align="center">Flow</h1>
-    <p align="center">An application that utilizes QR codes so event organizers can streamline the check-in process of their events.</p>
+<p align="right">
+    <a href="https://github.com/CSUF-ACM/flow/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/CSUF-ACM/flow.svg" alt="Issues"></a>
+    <a href="https://github.com/CSUF-ACM/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/CSUF-ACM/flow.svg" alt="Pull Requests"></a>
+</p>
+
+<p align="right">
+    <a href="https://github.com/CSUF-ACM/flow/blob/master/LICENSE"><img src="https://img.shields.io/github/license/CSUF-ACM/flow.svg" alt="License"></a>
+    <a href="https://acmcsuf.slack.com/messages/CCYLWSGH2"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
 <br><br>
 
-Flow is an application that allows event organizers to streamline the checking process of their events. Organizers will be able to present application generated QR codes and attendees will be able to scan the QR codes with their mobile device’s camera to check in.
+<p align="center">
+  <img src="https://github.com/CSUF-ACM/flow/blob/master/img/banners/flow_text_banner.png" alt="Flow" width="226">
+  <br>
+  <a href="https://travis-ci.com/CSUF-ACM/flow"><img src="https://travis-ci.com/CSUF-ACM/flow.svg?branch=master" alt="Build Status"></a>
+</p>
+
+<p align="center">An application that utilizes QR codes so event organizers can streamline the check-in process of their events.</p>
+
+<p align="center">Organizers will be able to present application generated QR codes and attendees will be able to scan the QR codes with their mobile device’s camera to check in.</p>
 
 Flow an open source project and is currently under development. There are many ways to participate in the development process. One can:
 - Submit [bugs and feature requests](https://github.com/CSUF-ACM/flow/issues)
