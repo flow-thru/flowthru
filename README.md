@@ -1,15 +1,3 @@
-<p align="right">
-    <a href="https://github.com/CSUF-ACM/flow/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/CSUF-ACM/flow.svg" alt="Issues"></a>
-    <a href="https://github.com/CSUF-ACM/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/CSUF-ACM/flow.svg" alt="Pull Requests"></a>
-    <a href="https://github.com/CSUF-ACM/flow/blob/master/LICENSE"><img src="https://img.shields.io/github/license/CSUF-ACM/flow.svg" alt="License"></a>
-    <a href="https://acmcsuf.slack.com/messages/CCYLWSGH2"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
-</p>
-
-<p align="right">
-
-</p>
-<br><br>
-
 <p align="center">
   <img src="https://github.com/CSUF-ACM/flow/blob/master/img/banners/flow_text_banner.png" alt="Flow" width="226">
   <br>
@@ -21,6 +9,11 @@
 <p align="center">Organizers will be able to present application generated QR codes and attendees will be able to scan the QR codes with their mobile device’s camera to check in.</p>
 
 ## Overview
+<p align="left">
+    <a href="https://github.com/CSUF-ACM/flow/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/CSUF-ACM/flow.svg" alt="Issues"></a>
+    <a href="https://github.com/CSUF-ACM/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/CSUF-ACM/flow.svg" alt="Pull Requests"></a>
+    <a href="https://acmcsuf.slack.com/messages/CCYLWSGH2"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
+</p>
 Flow an open source project and is currently under development. There are many ways to participate in the development process. One can:
 - Submit [bugs and feature requests](https://github.com/CSUF-ACM/flow/issues)
 - Participate in [code reviews](https://github.com/CSUF-ACM/flow/pulls)
@@ -41,3 +34,7 @@ If you would like to contribute, please refer to the [How to Contribute](https:/
 
 ## Related Projects
 This project is part of the California State University, Fullerton ACM Project Jam. If you'd like to contribute to or view other CSUF ACM projects please visit the [CSUF ACM Github](https://github.com/CSUF-ACM) 
+
+<p align="left">
+    <a href="https://github.com/CSUF-ACM/flow/blob/master/LICENSE"><img src="https://img.shields.io/github/license/CSUF-ACM/flow.svg" alt="License"></a>
+</p>
