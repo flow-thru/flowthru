@@ -26,7 +26,6 @@ Please refer to the [wiki](https://github.com/CSUF-ACM/flow/wiki) for more infor
 If you would like to contribute, please refer to the [How to Contribute](https://github.com/CSUF-ACM/flow/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
 - [How to build and run the application](https://github.com/CSUF-ACM/flow/wiki/How-to-Contribute)
 - [Submitting pull requests](https://github.com/CSUF-ACM/flow/wiki/How-to-Contribute)
-- [Coding guidelines](https://github.com/CSUF-ACM/flow/wiki/Coding-Guidelines)
 
 ## Feedback
 - Request a new feature on [Github](https://github.com/CSUF-ACM/flow/issues)
