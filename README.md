@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/CSUF-ACM/flow/blob/master/img/flow_text_banner.png" alt="Flow" width="226">
+  <img src="https://github.com/CSUF-ACM/flow/blob/master/img/png/flow_text_banner.png" alt="Flow" width="226">
   <br>
   <a href="https://travis-ci.com/CSUF-ACM/flow"><img src="https://travis-ci.com/CSUF-ACM/flow.svg?branch=master" alt="Build Status"></a>
 </p>
