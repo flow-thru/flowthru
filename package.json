@@ -1,0 +1,33 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"https://github.com/CSUF-ACM/flow/blob/master/img/png/flow_text_banner.png\" alt=\"Flow\" width=\"226\">   <br>   <a href=\"https://travis-ci.com/CSUF-ACM/flow\"><img src=\"https://travis-ci.com/CSUF-ACM/flow.svg?branch=master\" alt=\"Build Status\"></a> </p>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node index",
+    "deployment": "node index",
+    "development": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSUF-ACM/flow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CSUF-ACM/flow/issues"
+  },
+  "homepage": "https://github.com/CSUF-ACM/flow#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "pg": "^7.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
