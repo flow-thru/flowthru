@@ -1,9 +1,8 @@
 
-require('dotenv').config()
-
 const express = require('express');
 const pg = require('pg');
 const app = express();
+require('dotenv').config()
 
 const config = {
     user: process.env.POSTGRES_USER,
@@ -15,7 +14,7 @@ const config = {
 const pool = new pg.Pool(config);
 
 app.get('/', (req, res) => {
-    res.send('<h1>Flow</h1>')
+    res.send('<h1>Flow</h1>');
 });
 
 const PORT = process.env.NODE_CONTAINER_PORT || 80
