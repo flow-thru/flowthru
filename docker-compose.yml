@@ -1,0 +1,23 @@
+
+version: '3'
+services:
+  node:
+    container_name: node
+    command: npm run ${APPLICATION_MODE}
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "${NODE_LOCAL_PORT}:${NODE_CONTAINER_PORT}"
+    depends_on:
+      - postgres
+  postgres:
+    container_name: postgres
+    image: "postgres:${POSTGRES_VERSION}-alpine"
+    ports:
+      - "${POSTGRES_LOCAL_PORT}:${POSTGRES_CONTAINER_PORT}"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
