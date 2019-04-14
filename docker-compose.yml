@@ -3,11 +3,8 @@ version: '3'
 services:
   node:
     container_name: node
-    command: npm run ${APPLICATION_MODE}
+    command: npm run start
     build: .
-    volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
     ports:
       - "${NODE_LOCAL_PORT}:${NODE_CONTAINER_PORT}"
     depends_on:
