@@ -17,5 +17,5 @@ app.get('/', (req, res) => {
     res.send('<h1>Flow</h1>');
 });
 
-const PORT = process.env.NODE_CONTAINER_PORT || 80
+const PORT = process.env.NODE_CONTAINER_PORT || 3000
 app.listen(PORT, () => console.log('Server running on port ' + PORT));
