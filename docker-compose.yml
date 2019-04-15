@@ -5,6 +5,8 @@ services:
   nodejs:
     image: flowapp/flow-node
     container_name: nodejs
+    volumes: 
+      - ${PWD}/.env:/usr/src/app
     restart: unless-stopped
     command: npm run deploy
     depends_on:
