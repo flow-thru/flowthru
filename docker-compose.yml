@@ -30,7 +30,7 @@ services:
       - app-network
 
   webserver:
-    image: nginx:1-15-alpine
+    image: nginx:1.15-alpine
     container_name: webserver
     restart: unless-stopped
     ports:
@@ -42,7 +42,7 @@ services:
       - certbot-var:${CERTBOT_VAR}
     depends_on:
       - nodejs
-      - posgres
+      - postgres
     networks:
       - app-network
 
@@ -50,8 +50,8 @@ services:
     image: certbot/certbot
     container_name: certbot
     volumes:
-      - certbot_etc:${CERTBOT_ETC}
-      - certbot_val:${CERTBOT_VAL}
+      - certbot-etc:${CERTBOT_ETC}
+      - certbot-var:${CERTBOT_VAR}
       - web-root:${WEB_ROOT}
     depends_on:
       - webserver
@@ -61,11 +61,11 @@ volumes:
   certbot-etc:
   certbot-var:
   web-root:
-    driver: ${DRIVER}
+    driver: ${WEB_ROOT_DRIVER}
     driver_opts:
-      type: ${DRIVER_OPTS_TYPE}
-      device: ${DRIVER_OPTS_DEVICE_PATH}
-      o: ${DRIVER_OPTS_O}
+      type: ${WEB_ROOT_DRIVER_OPTS_TYPE}
+      device: ${WEB_ROOT_DRIVER_OPTS_DEVICE_PATH}
+      o: ${WEB_ROOT_DRIVER_OPTS_O}
 
 networks:
   app-network:
