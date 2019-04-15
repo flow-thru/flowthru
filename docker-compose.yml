@@ -9,7 +9,7 @@ services:
     image: nodejs
     container_name: nodejs
     restart: unless-stopped
-    command: npm run start
+    command: npm run deploy
     depends_on:
       - postgres
     networks:
