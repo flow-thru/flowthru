@@ -7,3 +7,4 @@ README.md
 .DS_Store
 npm-debug.log
 README
+.env
