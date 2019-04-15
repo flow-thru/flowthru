@@ -53,7 +53,7 @@ services:
       - web-root:${WEB_ROOT}
     depends_on:
       - webserver
-    command: CERTBOT_CMD
+    command: certonly --webroot --webroot-path=${WEB_ROOT} --email ${EMAIL} --agree-tos --no-eff-email --force-renewal -d ${DOMAIN1}  -d ${DOMAIN2}
 
 volumes:
   certbot-etc:
