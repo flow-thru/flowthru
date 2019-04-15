@@ -32,12 +32,14 @@ services:
     container_name: webserver
     restart: unless-stopped
     ports:
-      - "${NGINX_LOCAL_PORT}:${NGINX_CONTAINER_PORT}"
+      - "${NGINX_LOCAL_PORT1}:${NGINX_CONTAINER_PORT1}"
+      - "${NGINX_LOCAL_PORT2}:${NGINX_CONTAINER_PORT2}"
     volumes:
       - web-root:${WEB_ROOT}
       - ${NGINX_LOCAL_CONF}:${NGINX_CONTAINER_CONF}
       - certbot-etc:${CERTBOT_ETC}
       - certbot-var:${CERTBOT_VAR}
+      - dhparam:${DHPARAM_PATH}
     depends_on:
       - nodejs
       - postgres
@@ -53,7 +55,9 @@ services:
       - web-root:${WEB_ROOT}
     depends_on:
       - webserver
-    command: CERTBOT_CMD
+    command: certonly --webroot --webroot-path=${WEB_ROOT} --email ${EMAIL} --agree-tos --no-eff-email --force-renewal -d ${DOMAIN1}  -d ${DOMAIN2}
+    networks:
+      - app-network
 
 volumes:
   certbot-etc:
@@ -64,6 +68,12 @@ volumes:
       type: ${WEB_ROOT_DRIVER_OPTS_TYPE}
       device: ${WEB_ROOT_DRIVER_OPTS_DEVICE_PATH}
       o: ${WEB_ROOT_DRIVER_OPTS_O}
+  dhparam:
+    driver: ${DHPARAM_DRIVER}
+    driver_opts:
+      type: ${DHPARAM_DRIVER_OPTS_TYPE}
+      device: ${DHPARAM_DRIVER_OPTS_DEVICE}
+      o: ${DHPARAM_DRIVER_OPTS_O}
 
 networks:
   app-network:
