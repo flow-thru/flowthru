@@ -35,6 +35,7 @@ If you would like to contribute, please refer to the [How to Contribute](https:/
 ## Related Projects
 This project is part of the California State University, Fullerton ACM Project Jam. If you'd like to contribute to or view other CSUF ACM projects please visit the [CSUF ACM Github](https://github.com/CSUF-ACM) 
 
-<p align="left">
-    <a href="https://github.com/CSUF-ACM/flow/blob/master/LICENSE"><img src="https://img.shields.io/github/license/CSUF-ACM/flow.svg" alt="License"></a>
-</p>
+
+## Docker Image
+[![](https://images.microbadger.com/badges/image/flowapp/flow-node.svg)](https://microbadger.com/images/flowapp/flow-node "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/flowapp/flow-node.svg)](https://microbadger.com/images/flowapp/flow-node "Get your own version badge on microbadger.com")
