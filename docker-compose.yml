@@ -9,8 +9,6 @@ services:
     image: nodejs
     container_name: nodejs
     restart: unless-stopped
-    ports:
-      - "${NODE_LOCAL_PORT}:${NODE_CONTAINER_PORT}"
     command: npm run start
     depends_on:
       - postgres
