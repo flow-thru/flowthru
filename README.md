@@ -37,5 +37,5 @@ This project is part of the California State University, Fullerton ACM Project J
 
 
 ## Docker Image
-[![](https://images.microbadger.com/badges/image/flowapp/flow-node.svg)](https://microbadger.com/images/flowapp/flow-node "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/flowapp/flow-node.svg)](https://microbadger.com/images/flowapp/flow-node "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/flowapp/flow-node.svg)](https://microbadger.com/images/flowapp/flow-node "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/flowapp/flow-node.svg)](https://microbadger.com/images/flowapp/flow-node "Get your own image badge on microbadger.com")
+
