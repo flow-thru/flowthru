@@ -7,7 +7,7 @@ services:
     container_name: nodejs
     restart: unless-stopped
     command: npm run deploy
-    enviroment:
+    environment:
       - NODE_PORT=${NODE_PORT}
     depends_on:
       - postgres
