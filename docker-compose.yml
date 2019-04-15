@@ -56,8 +56,6 @@ services:
     depends_on:
       - webserver
     command: certonly --webroot --webroot-path=${WEB_ROOT} --email ${EMAIL} --agree-tos --no-eff-email --force-renewal -d ${DOMAIN1}  -d ${DOMAIN2}
-    networks:
-      - app-network
 
 volumes:
   certbot-etc:
