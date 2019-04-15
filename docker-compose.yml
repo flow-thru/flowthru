@@ -1,23 +1,72 @@
 
 version: '3'
+
 services:
-  node:
-    container_name: node
-    command: npm run ${APPLICATION_MODE}
-    build: .
-    volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: nodejs
+    restart: unless-stopped
     ports:
       - "${NODE_LOCAL_PORT}:${NODE_CONTAINER_PORT}"
+    command: npm run start
     depends_on:
       - postgres
+    networks:
+      - app-network
+
   postgres:
     container_name: postgres
-    image: "postgres:${POSTGRES_VERSION}-alpine"
+    image: "postgres:11-alpine"
     ports:
       - "${POSTGRES_LOCAL_PORT}:${POSTGRES_CONTAINER_PORT}"
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    networks:
+      - app-network
+
+  webserver:
+    image: nginx:1-15-alpine
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - "${NGINX_LOCAL_PORT}:${NGINX_CONTAINER_PORT}"
+    volumes:
+      - web-root:${WEB_ROOT}
+      - ${NGINX_LOCAL_CONF}:${NGINX_CONTAINER_CONF}
+      - certbot-etc:${CERTBOT_ETC}
+      - certbot-var:${CERTBOT_VAR}
+    depends_on:
+      - nodejs
+      - posgres
+    networks:
+      - app-network
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - certbot_etc:${CERTBOT_ETC}
+      - certbot_val:${CERTBOT_VAL}
+      - web-root:${WEB_ROOT}
+    depends_on:
+      - webserver
+    command: CERTBOT_CMD
+
+volumes:
+  certbot-etc:
+  certbot-var:
+  web-root:
+    driver: ${DRIVER}
+    driver_opts:
+      type: ${DRIVER_OPTS_TYPE}
+      device: ${DRIVER_OPTS_DEVICE_PATH}
+      o: ${DRIVER_OPTS_O}
+
+networks:
+  app-network:
+    driver: ${APP_NETWORK_DRIVER}

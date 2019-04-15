@@ -11,11 +11,21 @@ const config = {
     port: process.env.POSTGRES_PORT
 };
 
-const pool = new pg.Pool(config);
+const POOL = new pg.Pool(config);
+const PATH = __dirname + '/client/'
+const PORT = process.env.NODE_CONTAINER_PORT || 3000
+
+app.use('/', (req, res, next) => {
+    console.log('/' + req.method);
+    next();
+})
 
 app.get('/', (req, res) => {
-    res.send('<h1>Flow</h1>');
+    res.sendFile(PATH + 'index.html');
 });
 
-const PORT = process.env.NODE_CONTAINER_PORT || 3000
-app.listen(PORT, () => console.log('Server running on port ' + PORT));
+app.use(express.static(PATH));
+
+app.listen(PORT, () => {
+    console.log('Server running on port ' + PORT);
+});

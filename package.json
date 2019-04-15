@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "mocha --exit",
-    "deployment": "node index",
-    "development": "nodemon index"
+    "deploy": "node index",
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
