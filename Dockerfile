@@ -4,7 +4,7 @@
 # $ docker run -p 8080:8080 -v $(pwd):/home/node/usr/src/app flow-node npm run dev
 
 FROM node:10-alpine
-RUN mkdir -p /home/node/src/app/node_modules && chown -R node:node /home/node/src/app
+RUN mkdir -p /home/node/src/app/node_modules chown -R node:node /home/node/src/app
 WORKDIR /home/node/src/app
 COPY package*.json ./
 USER node
