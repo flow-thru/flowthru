@@ -1,5 +1,5 @@
 
-# Run in development mode:
+# Run application in dev mode:
 # $ docker build -t flow-node .
 # $ docker run -p 8080:8080 -v $(pwd):/home/node/usr/src/app flow-node npm run dev
 
