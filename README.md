@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://github.com/CSUF-ACM/flow/blob/master/img/png/flow_text_banner.png" alt="Flow" width="226">
+  <img src="https://github.com/flow-thru/flow/blob/master/img/png/flow_text_banner.png" alt="Flow" width="226">
   <br>
-  <a href="https://travis-ci.com/CSUF-ACM/flow"><img src="https://travis-ci.com/CSUF-ACM/flow.svg?branch=master" alt="Build Status"></a>
+  <a href="https://travis-ci.com/flow-thru/flow"><img src="https://travis-ci.com/flow-thru/flow.svg?branch=master" alt="Build Status"></a>
 </p>
 
 <p align="center">An application that utilizes QR codes so event organizers can streamline the check-in process of their events.</p>
@@ -16,20 +16,20 @@
 </p>
 
 Flow an open source project and is currently under development. There are many ways to participate in the development process. One can:
-- Submit [bugs and feature requests](https://github.com/CSUF-ACM/flow/issues)
-- Participate in [code reviews](https://github.com/CSUF-ACM/flow/pulls)
+- Submit [bugs and feature requests](https://github.com/flow-thru/flow/issues)
+- Participate in [code reviews](https://github.com/flow-thru/flow/pulls)
 - Join in the conversation on [Slack](https://acmcsuf.slack.com/messages/CCYLWSGH2)  
 
-Please refer to the [wiki](https://github.com/CSUF-ACM/flow/wiki) for more information.
+Please refer to the [wiki](https://github.com/flow-thru/flow/wiki) for more information.
 
 ## Contributing
-If you would like to contribute, please refer to the [How to Contribute](https://github.com/CSUF-ACM/flow/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
-- [How to build and run the application](https://github.com/CSUF-ACM/flow/wiki/How-to-Contribute)
-- [Submitting pull requests](https://github.com/CSUF-ACM/flow/wiki/How-to-Contribute)
+If you would like to contribute, please refer to the [How to Contribute](https://github.com/flow-thru/flow/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
+- [How to build and run the application](https://github.com/flow-thru/flow/wiki/How-to-Contribute)
+- [Submitting pull requests](https://github.com/.flow-thru/flow/wiki/How-to-Contribute)
 
 ## Feedback
-- Request a new feature on [Github](https://github.com/CSUF-ACM/flow/issues)
-- Submit a bug in [Github Issues](https://github.com/CSUF-ACM/flow/issues)
+- Request a new feature on [Github](https://github.com/flow-thru/flow/issues)
+- Submit a bug in [Github Issues](https://github.com/flow-thru/flow/issues)
 - Particiapte in the [Slack discussion](https://acmcsuf.slack.com/messages/CCYLWSGH2)
 
 
