@@ -10,8 +10,8 @@
 
 ## Overview
 <p align="left">
-    <a href="https://github.com/CSUF-ACM/flow/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/CSUF-ACM/flow.svg" alt="Issues"></a>
-    <a href="https://github.com/CSUF-ACM/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/CSUF-ACM/flow.svg" alt="Pull Requests"></a>
+    <a href="https://github.com/flow-thru/flow/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/flow-thru/flow.svg" alt="Issues"></a>
+    <a href="https://github.com/flow-thru/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/flow-thru/flow.svg" alt="Pull Requests"></a>
     <a href="https://acmcsuf.slack.com/messages/CCYLWSGH2"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
 
@@ -31,9 +31,6 @@ If you would like to contribute, please refer to the [How to Contribute](https:/
 - Request a new feature on [Github](https://github.com/CSUF-ACM/flow/issues)
 - Submit a bug in [Github Issues](https://github.com/CSUF-ACM/flow/issues)
 - Particiapte in the [Slack discussion](https://acmcsuf.slack.com/messages/CCYLWSGH2)
-
-## Related Projects
-This project is part of the California State University, Fullerton ACM Project Jam. If you'd like to contribute to or view other CSUF ACM projects please visit the [CSUF ACM Github](https://github.com/CSUF-ACM) 
 
 
 ## Docker Image
