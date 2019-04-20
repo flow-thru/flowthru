@@ -35,6 +35,6 @@ If you would like to contribute, please refer to the [How to Contribute](https:/
 
 ## Docker Image
 <p align="left">
-    <a href="https://microbadger.com/images/flowapp/flow-node "><img src="https://images.microbadger.com/badges/version/flowapp/flow-node.svg" alt="Version"></a>
-    <a href="https://microbadger.com/images/flowapp/flow-node"><img src="https://images.microbadger.com/badges/image/flowapp/flow-node.svg" alt="image"></a>
+    <a href="https://microbadger.com/images/flowapp/flow"><img src="https://images.microbadger.com/badges/version/flowapp/flow.svg" alt="Version"></a>
+    <a href="https://microbadger.com/images/flowapp/flow"><img src="https://images.microbadger.com/badges/image/flowapp/flow.svg" alt="image"></a>
 </p>
