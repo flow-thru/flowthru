@@ -6,7 +6,7 @@
 
 <p align="center">A G Suite organization management application.</p>
 
-<p align="center">flow will allow Gsuite organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
+<p align="center">flow will allow G Suite organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
 
 ## Overview
 <p align="left">
