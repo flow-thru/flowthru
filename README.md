@@ -4,9 +4,9 @@
   <a href="https://travis-ci.com/flow-thru/flow"><img src="https://travis-ci.com/flow-thru/flow.svg?branch=master" alt="Build Status"></a>
 </p>
 
-<p align="center">An application that utilizes QR codes so event organizers can streamline the check-in process of their events.</p>
+<p align="center">A G Suite organization management application.</p>
 
-<p align="center">Organizers will be able to present application generated QR codes and attendees will be able to scan the QR codes with their mobile device’s camera to check in.</p>
+<p align="center">flow will allow G Suite organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
 
 ## Overview
 <p align="left">
@@ -15,7 +15,7 @@
     <a href="https://join.slack.com/t/flowthru/shared_invite/enQtNjI3NjY5NzE3NzQ5LWY3Y2E0YmI2M2RmNjcyZGJhOTdjNTdiYjhjMjA5ZDJlYWE3NmI5OGVhZjYzYTZjOGYwNmYwZDlhY2RlYmVhZmQ"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
 
-Flow an open source project and is currently under development. There are many ways to participate in the development process. One can:
+flow is an open source project and is currently under development. There are many ways to participate in the development process. One can:
 - Submit [bugs and feature requests](https://github.com/flow-thru/flow/issues)
 - Participate in [code reviews](https://github.com/flow-thru/flow/pulls)
 - Join in the conversation on [Slack](https://join.slack.com/t/flowthru/shared_invite/enQtNjI3NjY5NzE3NzQ5LWY3Y2E0YmI2M2RmNjcyZGJhOTdjNTdiYjhjMjA5ZDJlYWE3NmI5OGVhZjYzYTZjOGYwNmYwZDlhY2RlYmVhZmQ)  
