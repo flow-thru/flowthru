@@ -24,8 +24,11 @@ Please refer to the [wiki](https://github.com/flow-thru/flow/wiki) for more info
 
 ## Contributing
 If you would like to contribute, please refer to the [How to Contribute](https://github.com/flow-thru/flow/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
-- [How to build and run the application](https://github.com/flow-thru/flow/wiki/How-to-Contribute)
-- [Submitting pull requests](https://github.com/flow-thru/flow/wiki/How-to-Contribute)
+- [Development process](https://github.com/flow-thru/flow/wiki/Development-Process)
+- [How to build and run the application](https://github.com/flow-thru/flow/wiki/How-to-Contribute#debugging-and-running)
+- [Submitting pull requests](https://github.com/flow-thru/flow/wiki/How-to-Contribute)  
+
+Please also view our [Code of Conduct](https://github.com/flow-thru/flow/blob/master/CODE_OF_CONDUCT.md)
 
 ## Feedback
 - Request a new feature on [Github](https://github.com/flow-thru/flow/issues)
