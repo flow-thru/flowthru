@@ -4,9 +4,9 @@
   <a href="https://travis-ci.com/flow-thru/flow"><img src="https://travis-ci.com/flow-thru/flow.svg?branch=master" alt="Build Status"></a>
 </p>
 
-<p align="center">An application that utilizes QR codes so event organizers can streamline the check-in process of their events.</p>
+<p align="center">A G Suite organization management application.</p>
 
-<p align="center">Organizers will be able to present application generated QR codes and attendees will be able to scan the QR codes with their mobile device’s camera to check in.</p>
+<p align="center">Flow will allow Gsuite organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
 
 ## Overview
 <p align="left">
