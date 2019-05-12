@@ -15,7 +15,7 @@
     <a href="https://join.slack.com/t/flowthru/shared_invite/enQtNjI3NjY5NzE3NzQ5LWY3Y2E0YmI2M2RmNjcyZGJhOTdjNTdiYjhjMjA5ZDJlYWE3NmI5OGVhZjYzYTZjOGYwNmYwZDlhY2RlYmVhZmQ"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
 
-flow an open source project and is currently under development. There are many ways to participate in the development process. One can:
+flow is an open source project and is currently under development. There are many ways to participate in the development process. One can:
 - Submit [bugs and feature requests](https://github.com/flow-thru/flow/issues)
 - Participate in [code reviews](https://github.com/flow-thru/flow/pulls)
 - Join in the conversation on [Slack](https://join.slack.com/t/flowthru/shared_invite/enQtNjI3NjY5NzE3NzQ5LWY3Y2E0YmI2M2RmNjcyZGJhOTdjNTdiYjhjMjA5ZDJlYWE3NmI5OGVhZjYzYTZjOGYwNmYwZDlhY2RlYmVhZmQ)  
