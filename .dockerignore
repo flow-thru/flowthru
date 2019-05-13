@@ -1,9 +1,5 @@
 .github
-diagrams
-docs
-img
 .travis.yml
-README.md
 .DS_Store
 npm-debug.log
 README
