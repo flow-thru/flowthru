@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/flow-thru/design/blob/master/banners/png/flow_plain.png" alt="Flow" width="226">
+  <img src="https://github.com/flow-thru/art/blob/master/banners/png/flow_plain.png" alt="Flow" width="226">
   <br>
   <a href="https://travis-ci.com/flow-thru/flow"><img src="https://travis-ci.com/flow-thru/flow.svg?branch=master" alt="Build Status"></a>
 </p>
