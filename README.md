@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://github.com/flow-thru/art/blob/master/banners/png/flow_plain.png" alt="Flow" width="226">
+  <img src="https://github.com/flow-thru/art/blob/master/banners/png/flowthru_plain.png" alt="flowthru" width="226">
   <br>
-  <a href="https://travis-ci.com/flow-thru/flow"><img src="https://travis-ci.com/flow-thru/flow.svg?branch=master" alt="Build Status"></a>
+  <a href="https://travis-ci.com/flow-thru/flowthru"><img src="https://travis-ci.com/flow-thru/flowthru.svg?branch=master" alt="Build Status"></a>
 </p>
 
 <p align="center">A G Suite organization management application.</p>
@@ -10,8 +10,8 @@
 
 ## Overview
 <p align="left">
-    <a href="https://github.com/flow-thru/flow/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/flow-thru/flow.svg" alt="Issues"></a>
-    <a href="https://github.com/flow-thru/flow/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/flow-thru/flow.svg" alt="Pull Requests"></a>
+    <a href="https://github.com/flow-thru/flowthru/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+"><img src="https://img.shields.io/github/issues/flow-thru/flowthru.svg" alt="Issues"></a>
+    <a href="https://github.com/flow-thru/flowthru/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+"><img src="https://img.shields.io/github/issues-pr/flow-thru/flowthru.svg" alt="Pull Requests"></a>
     <a href="https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
 
