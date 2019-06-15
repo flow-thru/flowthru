@@ -1,6 +1,6 @@
 .github
 .travis.yml
-.DS_Store
-npm-debug.log
-README
-.env
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+README.md
+LICENSE
