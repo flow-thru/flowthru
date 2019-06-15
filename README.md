@@ -4,9 +4,9 @@
   <a href="https://travis-ci.com/flow-thru/flowthru"><img src="https://travis-ci.com/flow-thru/flowthru.svg?branch=master" alt="Build Status"></a>
 </p>
 
-<p align="center">A G Suite organization management application.</p>
+<p align="center">An organization management application.</p>
 
-<p align="center">flow will allow G Suite organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
+<p align="center">flow will allow organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
 
 ## Overview
 <p align="left">
