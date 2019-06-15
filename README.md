@@ -38,6 +38,6 @@ Please also view our [Code of Conduct](https://github.com/flow-thru/flow/blob/ma
 
 ## Docker Image
 <p align="left">
-    <a href="https://microbadger.com/images/flowthru/flow"><img src="https://images.microbadger.com/badges/version/flowthru/flow.svg" alt="Version"></a>
-    <a href="https://microbadger.com/images/flowthru/flow"><img src="https://images.microbadger.com/badges/image/flowthru/flow.svg" alt="image"></a>
+    <a href="https://microbadger.com/images/flowthru/flowthru"><img src="https://images.microbadger.com/badges/version/flowthru/flowthru.svg" alt="Version"></a>
+    <a href="https://microbadger.com/images/flowthru/flowthru"><img src="https://images.microbadger.com/badges/image/flowthru/flowthru.svg" alt="image"></a>
 </p>
