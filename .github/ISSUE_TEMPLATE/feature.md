@@ -1,6 +1,6 @@
 ---
-name: To do
-about: Feature that is to be implemented
+name: Feature
+about: Enhancement that is to be implemented
 title: 
 labels: 
 assignees: 
