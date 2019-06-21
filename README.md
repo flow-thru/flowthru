@@ -6,7 +6,7 @@
 
 <p align="center">An organization management application.</p>
 
-<p align="center">flow will allow organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
+<p align="center">flowthru will allow organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
 
 ## Overview
 <p align="left">
@@ -15,7 +15,7 @@
     <a href="https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
 
-flow is an open source project and is currently under development. There are many ways to participate in the development process. One can:
+flowthru is an open source project and is currently under development. There are many ways to participate in the development process. One can:
 - Submit [bugs and feature requests](https://github.com/flow-thru/flow/issues)
 - Participate in [code reviews](https://github.com/flow-thru/flow/pulls)
 - Join in the conversation on [Slack](https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ)  
