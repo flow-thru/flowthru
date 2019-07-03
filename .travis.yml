@@ -3,4 +3,9 @@ node_js:
   - "stable"
 cache:
   directories:
-    - "node_modules"
+    - "client/node_modules"
+script:
+  - cd client
+  - npm install
+  - npm test
+  - npm run build
