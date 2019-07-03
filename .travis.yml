@@ -4,3 +4,7 @@ node_js:
 cache:
   directories:
     - "node_modules"
+script:
+  - cd client
+  - npm test
+  - npm run build
