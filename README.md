@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/flow-thru/art/blob/master/banners/png/flowthru_plain.png" alt="flowthru" width="226">
+  <img src="https://github.com/flow-thru/front-end-design/blob/master/art/banners/png/flowthru_plain.png" alt="flowthru" width="226">
   <br>
   <a href="https://travis-ci.com/flow-thru/flowthru"><img src="https://travis-ci.com/flow-thru/flowthru.svg?branch=master" alt="Build Status"></a>
 </p>
@@ -16,23 +16,23 @@
 </p>
 
 flowthru is an open source project and is currently under development. There are many ways to participate in the development process. One can:
-- Submit [bugs and feature requests](https://github.com/flow-thru/flow/issues)
-- Participate in [code reviews](https://github.com/flow-thru/flow/pulls)
+- Submit [bugs and feature requests](https://github.com/flow-thru/flowthru/issues)
+- Participate in [code reviews](https://github.com/flow-thru/flowthru/pulls)
 - Join in the conversation on [Slack](https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ)  
 
-Please refer to the [wiki](https://github.com/flow-thru/flow/wiki) for more information.
+Please refer to the [wiki](https://github.com/flow-thru/flowthru/wiki) for more information.
 
 ## Contributing
-If you would like to contribute, please refer to the [How to Contribute](https://github.com/flow-thru/flow/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
-- [Development process](https://github.com/flow-thru/flow/wiki/Development-Process)
-- [How to build and run the application](https://github.com/flow-thru/flow/wiki/How-to-Contribute#debugging-and-running)
-- [Submitting pull requests](https://github.com/flow-thru/flow/wiki/How-to-Contribute)  
+If you would like to contribute, please refer to the [How to Contribute](https://github.com/flow-thru/flowthru/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
+- [Development process](https://github.com/flow-thru/flowthru/wiki/Development-Process)
+- [How to build and run the application](https://github.com/flow-thru/flowthru/wiki/How-to-Contribute#debugging-and-running)
+- [Submitting pull requests](https://github.com/flow-thru/flowthru/wiki/How-to-Contribute)  
 
 Please also view our [Code of Conduct](https://github.com/flow-thru/flow/blob/master/CODE_OF_CONDUCT.md)
 
 ## Feedback
-- Request a new feature on [Github](https://github.com/flow-thru/flow/issues)
-- Submit a bug in [Github Issues](https://github.com/flow-thru/flow/issues)
+- Request a new feature on [Github](https://github.com/flow-thru/flowthru/issues)
+- Submit a bug in [Github Issues](https://github.com/flow-thru/flowthru/issues)
 - Particiapte in the [Slack discussion](https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ)
 
 
