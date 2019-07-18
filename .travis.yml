@@ -11,38 +11,38 @@ jobs:
       script:
         - docker run --rm -e CI=true -v $(pwd)/client:/src node:12 /bin/sh -c "cd src; npm install; npm test"
 
-    - stage: deploy to staging
-      script: skip
-      deploy:
-        - provider: elasticbeanstalk
-            zipfile: server
-            skip_cleanup: true
-            on:
-              branch: master
-        - provider: elasticbeanstalk
-            zipfile: client
-            skip_cleanup: true
-            on:
-              branch: master
+    # - stage: deploy to staging
+    #   script: skip
+    #   deploy:
+    #     - provider: elasticbeanstalk
+    #         zipfile: server
+    #         skip_cleanup: true
+    #         on:
+    #           branch: master
+    #     - provider: elasticbeanstalk
+    #         zipfile: client
+    #         skip_cleanup: true
+    #         on:
+    #           branch: master
 
-    - stage: deploy to production
-      script: skip
-      deploy:
-        - provider: elasticbeanstalk
-            zipfile: server
-            skip_cleanup: true
-            on:
-              tags: true
-              branch: master
-        - provider: elasticbeanstalk
-            zipfile: client
-            skip_cleanup: true
-            on:
-              tags: true
-              branch: master
-        - provider: releases
-            skip_cleanup: true
-            on:
-              tags: true
-              branch: master
+    # - stage: deploy to production
+    #   script: skip
+    #   deploy:
+    #     - provider: elasticbeanstalk
+    #         zipfile: server
+    #         skip_cleanup: true
+    #         on:
+    #           tags: true
+    #           branch: master
+    #     - provider: elasticbeanstalk
+    #         zipfile: client
+    #         skip_cleanup: true
+    #         on:
+    #           tags: true
+    #           branch: master
+    #     - provider: releases
+    #         skip_cleanup: true
+    #         on:
+    #           tags: true
+    #           branch: master
 
