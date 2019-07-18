@@ -6,7 +6,6 @@ jobs:
   include:
     - stage: test
       before_script:
-        - cd client
         - docker pull node:12
       script:
         - docker run --rm -e CI=true -v $(pwd)/client:/src node:12 /bin/sh -c "cd src; npm install; npm test"
