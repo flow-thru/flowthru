@@ -45,3 +45,127 @@ jobs:
     #           tags: true
     #           branch: master
 
+# language: go
+# 
+# go:
+# 	- "1.11.x"
+# 
+# env:
+# 	- GO_ENV=test
+# 
+# services:
+# 	- postgresql
+# 
+# before_script:
+# 	- psql -c 'create database server_test;' -U postgres
+# 	- mkdir -p $TRAVIS_BUILD_DIR/public/assets
+# 
+# go_import_path: server
+# 
+# install:
+# 	- go get github.com/gobuffalo/buffalo/buffalo
+# 	- go get $(go list ./... | grep -v /vendor/)
+# 
+# script: buffalo test
+# `
+# 
+# const nGitlabCi = `before_script:
+#   - apt-get update && apt-get install -y postgresql-client
+#   - ln -s /builds /go/src/$(echo "server" | cut -d "/" -f1)
+#   - cd /go/src/server
+#   - mkdir -p public/assets
+#   - go get -u github.com/gobuffalo/buffalo/buffalo
+#   - go get -t -v ./...
+#   - export PATH="$PATH:$GOPATH/bin"
+# 
+# stages:
+#   - test
+# 
+# .test-vars: &test-vars
+#   variables:
+#     GO_ENV: "test"
+#     POSTGRES_DB: "server_test"
+#     TEST_DATABASE_URL: "postgres://postgres:postgres@postgres:5432/server_test?sslmode=disable"
+# 
+# # Golang version choice helper
+# .use-golang-image: &use-golang-latest
+#   image: golang:latest
+# 
+# .use-golang-image: &use-golang-1-8
+#   image: golang:1.8
+# 
+# test:
+#   # Change to "<<: *use-golang-latest" to use the latest Go version
+#   <<: *use-golang-1-8
+#   <<: *test-vars
+#   stage: test
+#   services:
+#     - postgres:latest
+#   script:
+#     - buffalo test
+# `
+# 
+# const nGitlabCiNoPop = `before_script:
+#   - ln -s /builds /go/src/$(echo "server" | cut -d "/" -f1)
+#   - cd /go/src/server
+#   - mkdir -p public/assets
+#   - go get -u github.com/gobuffalo/buffalo/buffalo
+#   - go get -t -v ./...
+#   - export PATH="$PATH:$GOPATH/bin"
+# 
+# stages:
+#   - test
+# 
+# .test-vars: &test-vars
+#   variables:
+#     GO_ENV: "test"
+# 
+# # Golang version choice helper
+# .use-golang-image: &use-golang-latest
+#   image: golang:latest
+# 
+# .use-golang-image: &use-golang-1-8
+#   image: golang:1.8
+# 
+# test:
+#   # Change to "<<: *use-golang-latest" to use the latest Go version
+#   <<: *use-golang-1-8
+#   <<: *test-vars
+#   stage: test
+#   script:
+#     - buffalo test
+# `
+# 
+# const nVCSIgnore = `vendor/
+# **/*.log
+# **/*.sqlite
+# .idea/
+# bin/
+# tmp/
+# node_modules/
+# .sass-cache/
+# *-packr.go
+# public/assets/
+# server
+# .vscode/
+# .grifter/
+# .env
+# `
+# 
+# // GopkgTomlTmpl is the default dep Gopkg.toml
+# const GopkgTomlTmpl = `
+# [[constraint]]
+# 	name = "github.com/gobuffalo/buffalo"
+# 	version = "v0.14.6"
+# 
+# 
+# 
+# 	# DO NOT DELETE
+# 	[[prune.project]] # buffalo
+# 		name = "github.com/gobuffalo/buffalo"
+# 		unused-packages = false
+# 
+# 	# DO NOT DELETE
+# 	[[prune.project]] # pop
+# 		name = "github.com/gobuffalo/pop"
+# 		unused-packages = false
