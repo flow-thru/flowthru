@@ -1,24 +1,41 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
 node_modules
 client/.pnp
 .pnp.js
-
-# testing
 /coverage
-
-# production
 client/build
-
-# misc
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-# logging
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+vendor/
+**/*.log
+**/*.sqlite
+.idea/
+bin/
+tmp/
+node_modules/
+.sass-cache/
+*-packr.go
+public/assets/
+.vscode/
+.grifter/
+.env
+**/.DS_Store
+*.pid
+coverage
+coverage.data
+.svn
+.console_history
+.sass-cache/*
+.jhw-cache/
+jhw.*
+*.sublime*
+node_modules/
+dist/
+generated/
+.vendor/
+
