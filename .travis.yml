@@ -7,8 +7,10 @@ jobs:
     - stage: test
       before_script:
         - docker pull node:12
+        - docker pull gobuffalo/buffalo:v0.14.6
       script:
         - docker run --rm -e CI=true -v $(pwd)/client:/src node:12 /bin/sh -c "cd src; npm install; npm test"
+        - docker run --rm  -v $(pwd)/server:/go/src/server/ gobuffalo/buffalo:v0.14.6 /bin/sh -c "cd /go/src/server; buffalo setup"
 
     # - stage: deploy to staging
     #   script: skip
