@@ -7,10 +7,12 @@ jobs:
     - stage: test
       before_script:
         - docker pull node:12
-        - docker pull gobuffalo/buffalo:v0.14.6
+        - docker pull golang:1.12.7-stretch
       script:
         - docker run --rm -e CI=true -v $(pwd)/client:/src node:12 /bin/sh -c "cd src; npm install; npm test"
-        - docker run --rm  -v $(pwd)/server:/go/src/server/ gobuffalo/buffalo:v0.14.6 /bin/sh -c "cd /go/src/server; go get; buffalo setup"
+        - docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ golang:1.12.7-stretch /bin/sh -c "cd /go/src/server; go get; go test -v ./..."
+
+    # TODO: workflow
 
     # - stage: deploy to staging
     #   script: skip
