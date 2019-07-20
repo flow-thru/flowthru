@@ -1,6 +1,2 @@
 
 package models
-
-import (
-	"testing"
-)
