@@ -1,8 +1,24 @@
 package actions
 
-func (as *ActionSuite) Test_HomeHandler() {
-	res := as.JSON("/").Get()
+import (
+    "net/http"
+    "net/http/httptest"
+    "testing"
+)
 
-	as.Equal(200, res.Code)
-	as.Contains(res.Body.String(), "Welcome to Buffalo")
+func TestGetHomeMessage(t *testing.T) {
+    r, err := http.NewRequest("GET", "/", nil)
+        if err != nil {
+            t.Fatal(err)
+    }
+
+    w := httptest.NewRecorder()
+    handler := http.HandlerFunc(getHomeMessage)
+    handler.ServeHTTP(w, r)
+
+    resp := w.Result()
+
+    if resp.StatusCode != http.StatusOK {
+         t.Errorf("Unexpected status code %d", resp.StatusCode)
+    }
 }

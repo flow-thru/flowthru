@@ -1,9 +1,11 @@
 package actions
 
-import "github.com/gobuffalo/buffalo"
+import (
+	"encoding/json"
+	"net/http"
+)
 
-// HomeHandler is a default handler to serve up
-// a home page.
-func HomeHandler(c buffalo.Context) error {
-	return c.Render(200, r.JSON(map[string]string{"message": "Welcome to Buffalo!"}))
+
+func getHomeMessage(w http.ResponseWriter, r *http.Request) {
+    json.NewEncoder(w).Encode(map[string]string{"message": "coming soon"})
 }
