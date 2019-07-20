@@ -4,9 +4,9 @@
   <a href="https://travis-ci.com/flow-thru/flowthru"><img src="https://travis-ci.com/flow-thru/flowthru.svg?branch=master" alt="Build Status"></a>
 </p>
 
-<p align="center">An organization management application.</p>
+<p align="center">An event management application.</p>
 
-<p align="center">flowthru will allow organizations to manage google calendar events, forms, spreadsheets, and more, in a streamlined manner.</p>
+<p align="center">flowthru is an open source application that aims to help organize events in a more streamlined manner</p>
 
 ## Overview
 <p align="left">
