@@ -1,4 +1,5 @@
-package actions
+
+package models
 
 import (
 	"testing"
