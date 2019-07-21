@@ -14,12 +14,13 @@ stages:
 jobs:
   include:
     - stage: "tests"
-      before_script:
-        - docker pull node:12
-        - docker pull golang:1.12.7-stretch
       name: "front end tests"
-      script: docker run --rm -e CI=true -v $(pwd)/client:/src node:12 /bin/sh -c "cd src; npm install; npm test"
-    - script: docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ golang:1.12.7-stretch /bin/sh -c "cd /go/src/server; go get; go test -v ./..."
+      script:
+        - docker pull node:12
+        - docker run --rm -e CI=true -v $(pwd)/client:/src node:12 /bin/sh -c "cd src; npm install; npm test"
+    - script:
+        - docker pull golang:1.12.7-stretch
+        - docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ golang:1.12.7-stretch /bin/sh -c "cd /go/src/server; go get; go test -v ./..."
       name: "back end tests"
 
     # - stage: deploy to staging
