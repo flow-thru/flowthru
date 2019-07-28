@@ -68,6 +68,9 @@ jobs:
           bucket_name: $AWS_BUCKET_NAME
           zip_file: "server/server.zip"
           skip_cleanup: true
+          on:
+            all_branches: true
+            condition: $TRAVIS_TAG =~ ^v[0-9]+\.[0-9]+\.[0-9]+
         - provider: elasticbeanstalk
           access_key_id:
             secure: $AWS_ACCESS_KEY_ID
@@ -79,3 +82,6 @@ jobs:
           bucket_name: $AWS_BUCKET_NAME
           zip_file: "client/client.zip"
           skip_cleanup: true
+          on:
+            all_branches: true
+            condition: $TRAVIS_TAG =~ ^v[0-9]+\.[0-9]+\.[0-9]+
