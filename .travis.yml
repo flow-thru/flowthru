@@ -8,7 +8,7 @@ stages:
   - "tests"
   - "deploy to staging"
     if: branch = master
-  # - deploy to production
+  # - deploy to production 
   #   if: branch = master AND tag IS present
 
 jobs:
