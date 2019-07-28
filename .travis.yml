@@ -6,7 +6,7 @@ services:
 
 stages:
   - "tests"
-  - "deploy to staging"
+  - name: "deploy to staging"
     if: branch = master
   # - deploy to production 
   #   if: branch = master AND tag IS present
