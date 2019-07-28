@@ -18,7 +18,6 @@ jobs:
       script:
         - docker pull node:12
         - docker run --rm -e CI=true -v $(pwd)/client:/src node:12 /bin/sh -c "cd src; npm install; npm test"
-        - zip -r client.zip client
     - script:
         - docker pull golang:1.12.7-stretch
         - docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ golang:1.12.7-stretch /bin/sh -c "cd /go/src/server; go get; go test -v ./..."
@@ -26,7 +25,8 @@ jobs:
       name: "back end tests"
 
     - stage: "deploy to staging"
-      script: skip
+      script:
+        - zip -r client.zip client
       deploy:
         - provider: elasticbeanstalk
           access_key_id:
@@ -37,7 +37,6 @@ jobs:
           app: "flowthru-staging"
           env: "staging-client"
           bucket_name: $AWS_BUCKET_NAME
-          skip_cleanup: true
           zip_file: "client.zip"
 
     # - stage: deploy to production
