@@ -26,9 +26,20 @@ jobs:
 
     - stage: "deploy to staging"
       script:
-        - cd client
-        - zip -r client.zip .
+        - cd client; zip -r client.zip .; cd ..
+        - cd server; zip -r server.zip .; cd ..
       deploy:
+        - provider: elasticbeanstalk
+          access_key_id:
+            secure: $AWS_ACCESS_KEY_ID
+          secret_access_key:
+            secure: $AWS_SECRET_ACCESS_KEY
+          region: "us-east-1"
+          app: "flowthru-staging"
+          env: "staging-server"
+          bucket_name: $AWS_BUCKET_NAME
+          zip_file: "server/server.zip"
+          skip_cleanup: true
         - provider: elasticbeanstalk
           access_key_id:
             secure: $AWS_ACCESS_KEY_ID
@@ -38,7 +49,7 @@ jobs:
           app: "flowthru-staging"
           env: "staging-client"
           bucket_name: $AWS_BUCKET_NAME
-          zip_file: "client.zip"
+          zip_file: "client/client.zip"
           skip_cleanup: true
 
     # - stage: deploy to production
