@@ -38,6 +38,7 @@ jobs:
           env: "staging-client"
           bucket_name: $AWS_BUCKET_NAME
           zip_file: "client.zip"
+          skip_cleanup: true
 
     # - stage: deploy to production
     #   script: skip
