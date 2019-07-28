@@ -26,7 +26,8 @@ jobs:
 
     - stage: "deploy to staging"
       script:
-        - zip -r client.zip client
+        - cd client
+        - zip -r client.zip .
       deploy:
         - provider: elasticbeanstalk
           access_key_id:
