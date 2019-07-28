@@ -8,8 +8,8 @@ stages:
   - "tests"
   - name: "deploy to staging"
     if: branch = master
-  # - deploy to production 
-  #   if: branch = master AND tag IS present
+  - name: "deploy to production"
+    if: branch = master AND tag IS present
 
 jobs:
   include:
@@ -52,15 +52,30 @@ jobs:
           zip_file: "client/client.zip"
           skip_cleanup: true
 
-    # - stage: deploy to production
-    #   script: skip
-    #   deploy:
-    #     - provider: elasticbeanstalk
-    #         zipfile: server
-    #         skip_cleanup: true
-    #     - provider: elasticbeanstalk
-    #         zipfile: client
-    #         skip_cleanup: true
-    #     - provider: releases
-    #         skip_cleanup: true
-
+    - stage: "deploy to production"
+      script:
+        - cd client; zip -r client.zip .; cd ..
+        - cd server; zip -r server.zip .; cd ..
+      deploy:
+        - provider: elasticbeanstalk
+          access_key_id:
+            secure: $AWS_ACCESS_KEY_ID
+          secret_access_key:
+            secure: $AWS_SECRET_ACCESS_KEY
+          region: "us-east-1"
+          app: "flowthru-production"
+          env: "production-server"
+          bucket_name: $AWS_BUCKET_NAME
+          zip_file: "server/server.zip"
+          skip_cleanup: true
+        - provider: elasticbeanstalk
+          access_key_id:
+            secure: $AWS_ACCESS_KEY_ID
+          secret_access_key:
+            secure: $AWS_SECRET_ACCESS_KEY
+          region: "us-east-1"
+          app: "flowthru-production"
+          env: "production-client"
+          bucket_name: $AWS_BUCKET_NAME
+          zip_file: "client/client.zip"
+          skip_cleanup: true
