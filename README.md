@@ -40,9 +40,3 @@ Please also view our [Code of Conduct](https://github.com/flow-thru/flow/blob/ma
 - Submit a bug in [Github Issues](https://github.com/flow-thru/flowthru/issues)
 - Particiapte in the [Slack discussion](https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ)
 
-## Docker Image
-
-<p align="left">
-    <a href="https://microbadger.com/images/flowthru/flowthru"><img src="https://images.microbadger.com/badges/version/flowthru/flowthru.svg" alt="Version"></a>
-    <a href="https://microbadger.com/images/flowthru/flowthru"><img src="https://images.microbadger.com/badges/image/flowthru/flowthru.svg" alt="image"></a>
-</p>
