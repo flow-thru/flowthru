@@ -6,8 +6,6 @@ services:
 
 stages:
   - "tests"
-  - name: "deploy to staging"
-    if: branch = master
   - name: "deploy to production"
     if: tag IS present
 
@@ -23,35 +21,6 @@ jobs:
         - docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ golang:1.12.7-stretch /bin/sh -c "cd /go/src/server; go get; go test -v ./..."
         - zip -r server.zip server
       name: "back end tests"
-
-    - stage: "deploy to staging"
-      script:
-        - cd client; zip -r client.zip .; cd ..
-        - cd server; zip -r server.zip .; cd ..
-      deploy:
-        - provider: elasticbeanstalk
-          access_key_id:
-            secure: $AWS_ACCESS_KEY_ID
-          secret_access_key:
-            secure: $AWS_SECRET_ACCESS_KEY
-          region: "us-east-1"
-          app: "flowthru-staging"
-          env: "staging-server"
-          bucket_name: $AWS_BUCKET_NAME
-          zip_file: "server/server.zip"
-          skip_cleanup: true
-        - provider: elasticbeanstalk
-          access_key_id:
-            secure: $AWS_ACCESS_KEY_ID
-          secret_access_key:
-            secure: $AWS_SECRET_ACCESS_KEY
-          region: "us-east-1"
-          app: "flowthru-staging"
-          env: "staging-client"
-          bucket_name: $AWS_BUCKET_NAME
-          zip_file: "client/client.zip"
-          skip_cleanup: true
-
     - stage: "deploy to production"
       script:
         - cd client; zip -r client.zip .; cd ..
