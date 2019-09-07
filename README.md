@@ -29,7 +29,7 @@ Please refer to the [wiki](https://github.com/flow-thru/flowthru/wiki) for more 
 If you would like to contribute, please refer to the [How to Contribute](https://github.com/flow-thru/flowthru/wiki/How-to-Contribute) section of the wiki page. There you can find the following:
 
 - [Development process](https://github.com/flow-thru/flowthru/wiki/Development-Process)
-- [How to build and run the application](https://github.com/flow-thru/flowthru/wiki/How-to-Contribute#debugging-and-running)
+- [How to build and run the application](https://github.com/flow-thru/flowthru/wiki/Running-the-Applciation)
 - [Submitting pull requests](https://github.com/flow-thru/flowthru/wiki/How-to-Contribute)
 
 Please also view our [Code of Conduct](https://github.com/flow-thru/flow/blob/master/CODE_OF_CONDUCT.md)
