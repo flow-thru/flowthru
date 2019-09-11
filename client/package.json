@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-fontawesome": "^1.6.1",
     "react-loadable": "^5.5.0",
+    "react-loader-spinner": "^3.1.4",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
