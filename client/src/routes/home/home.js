@@ -1,6 +1,7 @@
 import React from "react";
 
-import logo from "../../logo.png";
+import FontAwesomeIcon from 'react-fontawesome'
+import logo from "../../img/flow_plain.png";
 import "./home.css";
 
 function Home() {
@@ -8,8 +9,8 @@ function Home() {
     <div className="home">
       <header className="home-header">
         <img src={logo} className="home-logo" alt="logo" />
-        <h1>flowthru.io</h1>
-        <p>coming soon</p>
+        <h1>flowthru</h1>
+        <a href="https://github.com/flow-thru/flowthru" className="home-link"><FontAwesomeIcon name='github' /> contribute</a>
       </header>
     </div>
   );
