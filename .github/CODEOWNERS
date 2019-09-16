@@ -1,3 +1,4 @@
 /server/     @flow-thru/developers @flow-thru/maintainers
 /client/     @flow-thru/developers @flow-thru/maintainers
+/database/   @flow-thru/developers @flow-thru/maintainers
 *            @flow-thru/administrators
