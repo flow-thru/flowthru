@@ -5,6 +5,6 @@ WORKDIR /go/src/server
 COPY . .
 RUN GO111MODULE=on go build -o /bin/app cmd/flowthru-server/main.go
 
-EXPOSE 3000
+EXPOSE 5000
 CMD ["/bin/app"]
 
