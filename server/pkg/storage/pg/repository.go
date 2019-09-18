@@ -6,11 +6,13 @@ import (
     _ "github.com/lib/pq"
 )
 
+// Storage is an interface type to implement the following methods
+// Serves for the creation of mock databases for unit testing.
 type Storage interface {
-    // methods
+    AllOrganizations() ([]*Organization, error)
 }
 
-// DB is an embedded type that serves as an interface to the Postgres database.
+// DB is an embedded type that serves as a connection to the Postgres database.
 type DB struct {
     *sql.DB
 }
