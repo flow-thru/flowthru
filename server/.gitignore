@@ -18,3 +18,7 @@
 ### Go Patch ###
 /vendor/
 /Godeps/
+
+# Misc
+.DS_Store
+*.swp
