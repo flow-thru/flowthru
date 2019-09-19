@@ -6,12 +6,6 @@ import (
     _ "github.com/lib/pq"
 )
 
-// Repository is an interface type to implement the following methods.
-// Serves for the creation of mock databases and code readability.
-type Repository interface {
-    AllOrganizations() ([]*Organization, error)
-}
-
 // repository is an embedded type that serves as a connection to the Postgres database.
 type respository struct {
     *sql.DB

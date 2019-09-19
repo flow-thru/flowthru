@@ -5,6 +5,7 @@ import (
     os
     fmt
 )
+
 const var BDTestCreds := fmt.Sprintf(
     "host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
     os.Getenv("FLOWTHRU_TEST_DB_HOST"),
