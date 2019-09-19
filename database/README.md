@@ -24,7 +24,7 @@ Run the Flowthru Database local server in a container by running the following c
 docker run --rm -d --name test-db \
     -p 5432:5432 \
     -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data \
-    postgres-flowthru
+    postgres-flowthru-test-db
 ```
 
 To view the tables, launch pgAdmin, right click `Servers` > `Create` > `Server...`
