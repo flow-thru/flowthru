@@ -9,6 +9,10 @@ stages:
   - name: "deploy to production"
     if: tag IS present
 
+addons:
+  hosts:
+    - travis.dev
+
 jobs:
   include:
     - stage: "tests"
