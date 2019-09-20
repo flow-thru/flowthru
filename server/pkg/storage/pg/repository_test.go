@@ -20,7 +20,7 @@ var DBTestCreds = fmt.Sprintf(
 func TestNewDB(t *testing.T) {
     db, err := NewDB(DBTestCreds)
     if err != nil {
-        t.Fatalf("Error when connection to database: %q", err.Error())
+        t.Fatalf("Error when connecting to database: %q", err.Error())
     }
     err = db.Close()
     if err != nil {
