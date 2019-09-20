@@ -29,6 +29,7 @@ jobs:
         - docker run -d --name test-db -p 127.0.0.1:80:5432 postgres-flowthru-test-db
         - docker pull golang:1.12.7-stretch
         - docker container exec -i test-db psql -U user test < ${PWD}/database/sample-data.sql
+        - docker container ls
         - docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ -w /go/src/server golang:1.12.7-stretch /bin/sh -c "go test -v ./..."
       name: "back end tests"
     - stage: "deploy to production"
