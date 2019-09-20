@@ -20,6 +20,7 @@ jobs:
         - docker pull node:12
         - docker run --rm -e CI=true -v $(pwd)/client:/src -w /src node:12 /bin/sh -c "npm install; npm test"
     - script:
+        - cat /etc/hosts
         - docker build ./database/ -t postgres-flowthru-test-db
         - docker run -d --name test-db -p 5432:5432 postgres-flowthru-test-db
         - docker pull golang:1.12.7-stretch
