@@ -6,7 +6,7 @@ services:
 
 env:
   FLOWTHRU_TEST_DB_HOST=localhost
-  FLOWTHRU_TEST_DB_PORT=5432
+  FLOWTHRU_TEST_DB_PORT=80
   FLOWTHRU_TEST_DB_USER=user
   FLOWTHRU_TEST_DB_PASSWORD=password
   FLOWTHRU_TEST_DB_NAME=test
@@ -26,7 +26,7 @@ jobs:
     - script:
         - cat /etc/hosts
         - docker build ./database/ -t postgres-flowthru-test-db
-        - docker run -d --name test-db -p 127.0.0.1:5432:5432 postgres-flowthru-test-db
+        - docker run -d --name test-db -p 127.0.0.1:80:5432 postgres-flowthru-test-db
         - docker pull golang:1.12.7-stretch
         - docker container exec -i test-db psql -U user test < ${PWD}/database/sample-data.sql
         - docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ -w /go/src/server golang:1.12.7-stretch /bin/sh -c "go test -v ./..."
