@@ -5,14 +5,15 @@ package pg
 type Organization struct {
     ID       int
     OwnerID  int
+    Name     string
 }
 
-// AllOrganizations gathers all of the organizations entities from the database.
-// It queries for all organizations and caches them.
+// OwnersOrganization gathers all of the organizations that belongs to a user.
+// It queries for all organizations that belong to a specific owner ID.
 // It returns a slice of Organization pointer types if successful, otherwise an error.
-func (db *DB) AllOrganizations() {[]*Organization, error) {
-    rows, err := db.Query("SELECT * FROM organization")
-    if eer != nil {
+func (db *Database) OwnersOrganizations(ownerId int) ([]*Organization, error) {
+    rows, err := db.Query("SELECT * FROM organization WHERE owner_id = $1", ownerId)
+    if err != nil {
         return nil, err
     }
     defer rows.Close()
@@ -20,7 +21,7 @@ func (db *DB) AllOrganizations() {[]*Organization, error) {
     orgs := make([]*Organization, 0)
     for rows.Next() {
         org := new(Organization)
-        err := rows.Scan(&org.ID, &org.OwnerID)
+        err := rows.Scan(&org.ID, &org.OwnerID, &org.Name)
         if err != nil {
             return nil, err
         }
