@@ -38,5 +38,12 @@ Under Connection, fill in the following:
 * **`Username`**: user
 * **`Password`**: password
 
-You can view the tables under `Servers` > `flowthru` > `Databases` > `test` > `Schemas` > `public` > `Tables` on the sidebar.
+You can view the tables under `Servers` > `flowthru` > `Databases` > `test` > `Schemas` > `public` > `Tables` on the sidebar.  
 
+Insert sample testing data using the following docker command:
+
+```
+docker container exec \
+    -i test-db \
+    psql -U user test < ${PWD}/sample-data.sql
+```
