@@ -11,7 +11,7 @@ func TestOwnersOrganizations(t *testing.T) {
 
     db, err := NewDB(DBTestCreds)
     if err != nil {
-        t.Fatalf("Recieved error when connection to database: %q\n", err.Error())
+        t.Fatalf("Recieved error when connecting to database: %q\n", err.Error())
     }
     orgs, err := db.OwnersOrganizations(ownerId)
     if err != nil {
