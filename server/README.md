@@ -1,9 +1,8 @@
 ## Dependencies
 ### Software
 - [Go](https://golang.org/)
-### Editors
+### Interfaces
 These are not required, but recommended if you are unsure of what you are doing
-- [VS Code](https://code.visualstudio.com/download)
 - [Postman](https://www.getpostman.com/)
 
 ### Running the API

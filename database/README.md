@@ -1,7 +1,7 @@
 ## Dependencies
 ### Software
 - [Docker](https://docs.docker.com/)
-### Editors
+### Interfaces
 These are not required, but recommended if you are unsure of what you are doing
 - [pgAdmin 4](https://www.pgadmin.org/)
 
