@@ -1,14 +1,13 @@
 
-language: minimal
-
 services:
   - docker
+  - postgresql
 
 env:
   FLOWTHRU_TEST_DB_HOST=localhost
   FLOWTHRU_TEST_DB_PORT=5432
-  FLOWTHRU_TEST_DB_USER=user
-  FLOWTHRU_TEST_DB_PASSWORD=password
+  FLOWTHRU_TEST_DB_USER=postgres
+  FLOWTHRU_TEST_DB_PASSWORD=""
   FLOWTHRU_TEST_DB_NAME=test
 
 stages:
@@ -24,12 +23,10 @@ jobs:
         - docker pull node:12
         - docker run --rm -e CI=true -v $(pwd)/client:/src -w /src node:12 /bin/sh -c "npm install; npm test"
     - script:
-        - cat /etc/hosts
-        - docker build ./database/ -t postgres-flowthru-test-db
-        - docker run -d --name test-db -p 127.0.0.1:80:5432 postgres-flowthru-test-db
+        - psql -c "create database test;" -U postgres
+        - psql -U postgres test < database/init-tables.sql
+        - psql -U postgres test < database/sample-data.sql
         - docker pull golang:1.12.7-stretch
-        - docker container exec -i test-db psql -U user test < ${PWD}/database/sample-data.sql
-        - docker container ls
         - docker run --rm -e GO111MODULE=on -v $(pwd)/server:/go/src/server/ -w /go/src/server golang:1.12.7-stretch /bin/sh -c "go test -v ./..."
       name: "back end tests"
     - stage: "deploy to production"
