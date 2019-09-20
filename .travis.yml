@@ -12,6 +12,10 @@ stages:
   - name: "deploy to production"
     if: tag IS present
 
+before_script:
+  - sudo /etc/init.d/mysql stop
+  - sudo /etc/init.d/postgresql stop
+
 jobs:
   include:
     - stage: "tests"
