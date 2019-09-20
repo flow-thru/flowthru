@@ -1,4 +1,6 @@
-This code of conduct outlines expectations for participation in the flowthru.io open source community. People violating this code of conduct may be banned from the community.
+# Flowthru's Code of Conduct
+
+This code of conduct outlines expectations for participation in the Flowthru open source community. People violating this code of conduct may be banned from the community.
 
 Our open source community strives to:
 

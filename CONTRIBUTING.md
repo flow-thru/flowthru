@@ -1,5 +1,5 @@
 
-# Contributing to flowthru
+# Contributing to Flowthru
 
 Welcome, and thank you for your interest in contributing!
 
@@ -9,7 +9,7 @@ The goal of this document is to provide a high-level overview of how you can get
 
 ## Asking Questions
 
-Have a question? Rather than opening an issue, we encourage you to ask in the [flowthru Slack](https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ). This is the hub for all general discussion and "how-to" questions.
+Have a question? Rather than opening an issue, we encourage you to ask in the [Flowthru Slack](https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ). This is the hub for all general discussion and "how-to" questions.
 
 ## Providing Feedback
 
