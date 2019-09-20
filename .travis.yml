@@ -5,11 +5,11 @@ services:
   - docker
 
 env:
-  FLOWTHRU_TEST_DB_HOST="localhost"
-  FLOWTHRU_TEST_DB_PORT="5432"
-  FLOWTHRU_TEST_DB_USER="user"
-  FLOWTHRU_TEST_DB_PASSWORD="password"
-  FLOWTHRU_TEST_DB_NAME="test"
+  FLOWTHRU_TEST_DB_HOST=localhost
+  FLOWTHRU_TEST_DB_PORT=5432
+  FLOWTHRU_TEST_DB_USER=user
+  FLOWTHRU_TEST_DB_PASSWORD=password
+  FLOWTHRU_TEST_DB_NAME=test
 
 stages:
   - "tests"
