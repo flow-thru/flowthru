@@ -5,13 +5,16 @@ import (
     "log"
     "os"
     "net/http"
-	"server/pkg/http/rest"
+	"server/pkg/routes"
 	"server/pkg/storage/pg"
+    // "encoding/gob"
+
+    // "github.com/gorilla/sessions"
 )
 
-
-func main() {
-    var DBCreds = fmt.Sprintf(
+var (
+    // store *session.FilesystemStore
+    DBCreds = fmt.Sprintf(
         "host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
         os.Getenv("FLOWTHRU_DB_HOST"),
         os.Getenv("FLOWTHRU_DB_PORT"),
@@ -19,13 +22,20 @@ func main() {
         os.Getenv("FLOWTHRU_DB_PASSWORD"),
         os.Getenv("FLOWTHRU_DB_NAME"),
     )
+)
+
+
+func main() {
+    // store = sessions.NewFilesystemStore("", []byte(os.Getenv("FLOWTHRU_SESSION_KEY")))
+    // gob.Register(map[string]interface{}{})
     _, err := pg.NewDB(DBCreds)
 
     if err != nil {
         log.Fatal(err)
     }
-    router := rest.Handler()
+    router := routes.Handler()
+    http.Handle("/", router)
     fmt.Println("flowing thru at http://localhost:5000")
-	log.Fatal(http.ListenAndServe(":5000", router))
+	log.Fatal(http.ListenAndServe(":5000", nil))
 }
 
