@@ -14,7 +14,7 @@ export FLOWTHRU_DB_PASSWORD="password"
 export FLOWTHRU_DB_NAME="test"
 ```
 
-Auth0 is utilized to authenticate users. Visit the [Auth0](http://auth0.com) website to create a free account and obtain a client id, domain, and client secret id. Then export them as environment variables as detailed below.
+Auth0 is utilized to authenticate users. Visit the [Auth0](http://auth0.com) website to create a free account and obtain a domain and an API identifier. View instructions [here](https://auth0.com/docs/apis). Then export them as environment variables as detailed below.  
 
 ```bash
 export FLOWTHRU_AUTH0_DOMAIN="{YOUR AUTH0 DOMAIN}"
