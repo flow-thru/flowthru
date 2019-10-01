@@ -14,22 +14,15 @@ export FLOWTHRU_DB_PASSWORD="password"
 export FLOWTHRU_DB_NAME="test"
 ```
 
-Auth0 is utilized to authenticate users. For security purposes, you are required to create your own Auth0 account at auth0.com and export the following credentials in order to run the server application.
+Auth0 is utilized to authenticate users. Visit the [Auth0](http://auth0.com) website to create a free account and obtain a client id, domain, and client secret id. Then export them as environment variables as detailed below.
 
 ```bash
-export FLOWTHRU_AUTH0_CLIENT_ID=CLIENT_ID                          # Replace with your auth0 client ID
-export FLOWTHRU_AUTH0_DOMAIN=DOMAIN                                # Replace with your auth0 domain
-export FLOWTHRU_AUTH0_CLIENT_SECRET=CLIENT_SECRET                  # Replace with your auth0 secret client ID
-export FLOWTHRU_AUTH0_CALLBACK_URL=http://localhost:3000/callback
+export FLOWTHRU_AUTH0_DOMAIN="{YOUR AUTH0 DOMAIN}"
+export FLOWTHRU_API_IDENTIFIER="{YOUR AUTH0 API IDENTIFIER}"
 ```
 
 To learn more about Auth0 in golang, please visit [Auth0's Golang documentation](https://auth0.com/docs/quickstart/webapp/golang)  
 
-Lastly, export a session key for sessions. You can use Go's [crypto/rand](https://play.golang.org/p/ZgvycIYxqt) package to gerenate a key  
-
-```bash
-export FLOWTHRU_SESSION_KEY=SUPER_SECRET_KEY        # Replace with you generated key
-```
 
 To start the server application, run
 
