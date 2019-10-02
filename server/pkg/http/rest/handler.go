@@ -3,11 +3,11 @@ package rest
 
 import (
     "net/http"
-    "github.com/julienschmidt/httprouter"
+    "github.com/gorilla/mux"
 )
 
 func Handler() http.Handler {
-	router := httprouter.New()
+	router := mux.NewRouter()
 	return router
 }
 
