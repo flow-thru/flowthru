@@ -3,8 +3,8 @@ INSERT INTO public."user"(
 	VALUES (1, 'adam');
 
 INSERT INTO public."user"(
-	id, first_name)
-	VALUES (2, 'bob');
+	id, first_name, primary_email)
+	VALUES (2, 'bob', 'test@flowthru.com');
 
 INSERT INTO public."user"(
 	id, first_name)
@@ -33,3 +33,4 @@ INSERT INTO public.organization(
 INSERT INTO public.organization(
 	id, owner_id, name)
 	VALUES (4, 4, 'davids org');
+
