@@ -1,22 +1,22 @@
 INSERT INTO public."user"(
-	id, first_name)
-	VALUES (1, 'adam', 'test@flowthru.com');
+	id, first_name, primary_email)
+	VALUES (1, 'adam', 'adam@flowthru.com');
 
 INSERT INTO public."user"(
 	id, first_name, primary_email)
-	VALUES (2, 'bob', 'test@flowthru.com');
+	VALUES (2, 'bob', 'bob@flowthru.com');
 
 INSERT INTO public."user"(
-	id, first_name)
-	VALUES (3, 'charlie', 'test@flowthru.com');
+	id, first_name, primary_email)
+	VALUES (3, 'charlie', 'charlie@flowthru.com');
 
 INSERT INTO public."user"(
-	id, first_name)
-	VALUES (4, 'david', 'test@flowthru.com');
+	id, first_name, primary_email)
+	VALUES (4, 'david', 'david@flowthru.com');
 
 INSERT INTO public."user"(
-	id, first_name)
-	VALUES (5, 'eugene', 'test@flowthru.com');
+	id, first_name, primary_email)
+	VALUES (5, 'eugene', 'eugene@flowthru.com');
 
 INSERT INTO public.organization(
 	id, owner_id, name)
