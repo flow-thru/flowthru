@@ -5,7 +5,7 @@
 -- Dumped from database version 11.5 (Debian 11.5-1.pgdg90+1)
 -- Dumped by pg_dump version 11.5
 
--- Started on 2019-09-20 02:59:31 PDT
+-- Started on 2019-10-01 19:42:01 PDT
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -79,7 +79,7 @@ CREATE SEQUENCE public.event_form_id_seq
 
 
 --
--- TOC entry 3059 (class 0 OID 0)
+-- TOC entry 3061 (class 0 OID 0)
 -- Dependencies: 200
 -- Name: event_form_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -101,7 +101,7 @@ CREATE SEQUENCE public.event_id_seq
 
 
 --
--- TOC entry 3060 (class 0 OID 0)
+-- TOC entry 3062 (class 0 OID 0)
 -- Dependencies: 201
 -- Name: event_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -146,7 +146,7 @@ CREATE SEQUENCE public.event_notification_id_seq
 
 
 --
--- TOC entry 3061 (class 0 OID 0)
+-- TOC entry 3063 (class 0 OID 0)
 -- Dependencies: 204
 -- Name: event_notification_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -189,7 +189,7 @@ CREATE TABLE public.organization (
 
 
 --
--- TOC entry 208 (class 1259 OID 16421)
+-- TOC entry 208 (class 1259 OID 16424)
 -- Name: organization_admin; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -200,7 +200,7 @@ CREATE TABLE public.organization_admin (
 
 
 --
--- TOC entry 209 (class 1259 OID 16424)
+-- TOC entry 209 (class 1259 OID 16427)
 -- Name: organization_form_template; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -211,7 +211,7 @@ CREATE TABLE public.organization_form_template (
 
 
 --
--- TOC entry 210 (class 1259 OID 16427)
+-- TOC entry 210 (class 1259 OID 16430)
 -- Name: organization_form_template_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -224,7 +224,7 @@ CREATE SEQUENCE public.organization_form_template_id_seq
 
 
 --
--- TOC entry 3062 (class 0 OID 0)
+-- TOC entry 3064 (class 0 OID 0)
 -- Dependencies: 210
 -- Name: organization_form_template_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -233,7 +233,7 @@ ALTER SEQUENCE public.organization_form_template_id_seq OWNED BY public.organiza
 
 
 --
--- TOC entry 211 (class 1259 OID 16429)
+-- TOC entry 211 (class 1259 OID 16432)
 -- Name: organization_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -246,7 +246,7 @@ CREATE SEQUENCE public.organization_id_seq
 
 
 --
--- TOC entry 3063 (class 0 OID 0)
+-- TOC entry 3065 (class 0 OID 0)
 -- Dependencies: 211
 -- Name: organization_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -255,7 +255,7 @@ ALTER SEQUENCE public.organization_id_seq OWNED BY public.organization.id;
 
 
 --
--- TOC entry 212 (class 1259 OID 16431)
+-- TOC entry 212 (class 1259 OID 16434)
 -- Name: organization_invitation; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -266,7 +266,7 @@ CREATE TABLE public.organization_invitation (
 
 
 --
--- TOC entry 213 (class 1259 OID 16434)
+-- TOC entry 213 (class 1259 OID 16437)
 -- Name: organization_join_request; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -277,7 +277,7 @@ CREATE TABLE public.organization_join_request (
 
 
 --
--- TOC entry 214 (class 1259 OID 16437)
+-- TOC entry 214 (class 1259 OID 16440)
 -- Name: organization_member; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -288,7 +288,7 @@ CREATE TABLE public.organization_member (
 
 
 --
--- TOC entry 215 (class 1259 OID 16440)
+-- TOC entry 215 (class 1259 OID 16443)
 -- Name: organization_notification; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -300,7 +300,7 @@ CREATE TABLE public.organization_notification (
 
 
 --
--- TOC entry 216 (class 1259 OID 16443)
+-- TOC entry 216 (class 1259 OID 16446)
 -- Name: organization_notification_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -313,7 +313,7 @@ CREATE SEQUENCE public.organization_notification_id_seq
 
 
 --
--- TOC entry 3064 (class 0 OID 0)
+-- TOC entry 3066 (class 0 OID 0)
 -- Dependencies: 216
 -- Name: organization_notification_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -322,7 +322,7 @@ ALTER SEQUENCE public.organization_notification_id_seq OWNED BY public.organizat
 
 
 --
--- TOC entry 217 (class 1259 OID 16445)
+-- TOC entry 217 (class 1259 OID 16448)
 -- Name: organization_tag; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -333,7 +333,7 @@ CREATE TABLE public.organization_tag (
 
 
 --
--- TOC entry 218 (class 1259 OID 16451)
+-- TOC entry 218 (class 1259 OID 16454)
 -- Name: rsvp; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -344,7 +344,7 @@ CREATE TABLE public.rsvp (
 
 
 --
--- TOC entry 219 (class 1259 OID 16454)
+-- TOC entry 219 (class 1259 OID 16457)
 -- Name: task; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -357,7 +357,7 @@ CREATE TABLE public.task (
 
 
 --
--- TOC entry 220 (class 1259 OID 16457)
+-- TOC entry 220 (class 1259 OID 16460)
 -- Name: task_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -370,7 +370,7 @@ CREATE SEQUENCE public.task_id_seq
 
 
 --
--- TOC entry 3065 (class 0 OID 0)
+-- TOC entry 3067 (class 0 OID 0)
 -- Dependencies: 220
 -- Name: task_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -379,7 +379,7 @@ ALTER SEQUENCE public.task_id_seq OWNED BY public.task.id;
 
 
 --
--- TOC entry 221 (class 1259 OID 16459)
+-- TOC entry 221 (class 1259 OID 16462)
 -- Name: terms_conditions; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -391,18 +391,19 @@ CREATE TABLE public.terms_conditions (
 
 
 --
--- TOC entry 222 (class 1259 OID 16465)
+-- TOC entry 222 (class 1259 OID 16468)
 -- Name: user; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public."user" (
     id bigint NOT NULL,
-    first_name text NOT NULL
+    first_name text NOT NULL,
+    primary_email text NOT NULL
 );
 
 
 --
--- TOC entry 223 (class 1259 OID 16468)
+-- TOC entry 223 (class 1259 OID 16474)
 -- Name: user_email; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -413,7 +414,7 @@ CREATE TABLE public.user_email (
 
 
 --
--- TOC entry 224 (class 1259 OID 16474)
+-- TOC entry 224 (class 1259 OID 16480)
 -- Name: user_form_template; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -424,7 +425,7 @@ CREATE TABLE public.user_form_template (
 
 
 --
--- TOC entry 225 (class 1259 OID 16477)
+-- TOC entry 225 (class 1259 OID 16483)
 -- Name: user_form_template_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -437,7 +438,7 @@ CREATE SEQUENCE public.user_form_template_id_seq
 
 
 --
--- TOC entry 3066 (class 0 OID 0)
+-- TOC entry 3068 (class 0 OID 0)
 -- Dependencies: 225
 -- Name: user_form_template_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -446,7 +447,7 @@ ALTER SEQUENCE public.user_form_template_id_seq OWNED BY public.user_form_templa
 
 
 --
--- TOC entry 226 (class 1259 OID 16479)
+-- TOC entry 226 (class 1259 OID 16485)
 -- Name: user_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -459,7 +460,7 @@ CREATE SEQUENCE public.user_id_seq
 
 
 --
--- TOC entry 3067 (class 0 OID 0)
+-- TOC entry 3069 (class 0 OID 0)
 -- Dependencies: 226
 -- Name: user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
@@ -468,7 +469,7 @@ ALTER SEQUENCE public.user_id_seq OWNED BY public."user".id;
 
 
 --
--- TOC entry 2846 (class 2604 OID 16481)
+-- TOC entry 2846 (class 2604 OID 16487)
 -- Name: event id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -476,7 +477,7 @@ ALTER TABLE ONLY public.event ALTER COLUMN id SET DEFAULT nextval('public.event_
 
 
 --
--- TOC entry 2847 (class 2604 OID 16482)
+-- TOC entry 2847 (class 2604 OID 16488)
 -- Name: event_form id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -484,7 +485,7 @@ ALTER TABLE ONLY public.event_form ALTER COLUMN id SET DEFAULT nextval('public.e
 
 
 --
--- TOC entry 2848 (class 2604 OID 16483)
+-- TOC entry 2848 (class 2604 OID 16489)
 -- Name: event_notification id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -492,7 +493,7 @@ ALTER TABLE ONLY public.event_notification ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 2849 (class 2604 OID 16484)
+-- TOC entry 2849 (class 2604 OID 16490)
 -- Name: organization id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -500,7 +501,7 @@ ALTER TABLE ONLY public.organization ALTER COLUMN id SET DEFAULT nextval('public
 
 
 --
--- TOC entry 2850 (class 2604 OID 16485)
+-- TOC entry 2850 (class 2604 OID 16491)
 -- Name: organization_form_template id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -508,7 +509,7 @@ ALTER TABLE ONLY public.organization_form_template ALTER COLUMN id SET DEFAULT n
 
 
 --
--- TOC entry 2851 (class 2604 OID 16486)
+-- TOC entry 2851 (class 2604 OID 16492)
 -- Name: organization_notification id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -516,7 +517,7 @@ ALTER TABLE ONLY public.organization_notification ALTER COLUMN id SET DEFAULT ne
 
 
 --
--- TOC entry 2852 (class 2604 OID 16487)
+-- TOC entry 2852 (class 2604 OID 16493)
 -- Name: task id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -524,7 +525,7 @@ ALTER TABLE ONLY public.task ALTER COLUMN id SET DEFAULT nextval('public.task_id
 
 
 --
--- TOC entry 2853 (class 2604 OID 16488)
+-- TOC entry 2853 (class 2604 OID 16494)
 -- Name: user id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -532,7 +533,7 @@ ALTER TABLE ONLY public."user" ALTER COLUMN id SET DEFAULT nextval('public.user_
 
 
 --
--- TOC entry 2854 (class 2604 OID 16489)
+-- TOC entry 2854 (class 2604 OID 16495)
 -- Name: user_form_template id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -540,7 +541,7 @@ ALTER TABLE ONLY public.user_form_template ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 2856 (class 2606 OID 16491)
+-- TOC entry 2856 (class 2606 OID 16497)
 -- Name: check_in check_in_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -549,7 +550,7 @@ ALTER TABLE ONLY public.check_in
 
 
 --
--- TOC entry 2860 (class 2606 OID 16493)
+-- TOC entry 2860 (class 2606 OID 16499)
 -- Name: event_admin event_admin_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -558,7 +559,7 @@ ALTER TABLE ONLY public.event_admin
 
 
 --
--- TOC entry 2862 (class 2606 OID 16495)
+-- TOC entry 2862 (class 2606 OID 16501)
 -- Name: event_form event_form_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -567,7 +568,7 @@ ALTER TABLE ONLY public.event_form
 
 
 --
--- TOC entry 2864 (class 2606 OID 16497)
+-- TOC entry 2864 (class 2606 OID 16503)
 -- Name: event_invitation event_invitation_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -576,7 +577,7 @@ ALTER TABLE ONLY public.event_invitation
 
 
 --
--- TOC entry 2866 (class 2606 OID 16499)
+-- TOC entry 2866 (class 2606 OID 16505)
 -- Name: event_notification event_notification_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -585,7 +586,7 @@ ALTER TABLE ONLY public.event_notification
 
 
 --
--- TOC entry 2858 (class 2606 OID 16501)
+-- TOC entry 2858 (class 2606 OID 16507)
 -- Name: event event_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -594,7 +595,7 @@ ALTER TABLE ONLY public.event
 
 
 --
--- TOC entry 2868 (class 2606 OID 16503)
+-- TOC entry 2868 (class 2606 OID 16509)
 -- Name: event_tag event_tag_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -603,7 +604,7 @@ ALTER TABLE ONLY public.event_tag
 
 
 --
--- TOC entry 2870 (class 2606 OID 16505)
+-- TOC entry 2870 (class 2606 OID 16511)
 -- Name: follow follow_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -612,7 +613,7 @@ ALTER TABLE ONLY public.follow
 
 
 --
--- TOC entry 2874 (class 2606 OID 16507)
+-- TOC entry 2874 (class 2606 OID 16513)
 -- Name: organization_admin organization_admin_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -621,7 +622,7 @@ ALTER TABLE ONLY public.organization_admin
 
 
 --
--- TOC entry 2876 (class 2606 OID 16509)
+-- TOC entry 2876 (class 2606 OID 16515)
 -- Name: organization_form_template organization_form_template_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -630,7 +631,7 @@ ALTER TABLE ONLY public.organization_form_template
 
 
 --
--- TOC entry 2878 (class 2606 OID 16511)
+-- TOC entry 2878 (class 2606 OID 16517)
 -- Name: organization_invitation organization_invitation_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -639,7 +640,7 @@ ALTER TABLE ONLY public.organization_invitation
 
 
 --
--- TOC entry 2880 (class 2606 OID 16513)
+-- TOC entry 2880 (class 2606 OID 16519)
 -- Name: organization_join_request organization_join_request_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -648,7 +649,7 @@ ALTER TABLE ONLY public.organization_join_request
 
 
 --
--- TOC entry 2882 (class 2606 OID 16515)
+-- TOC entry 2882 (class 2606 OID 16521)
 -- Name: organization_member organization_member_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -657,7 +658,7 @@ ALTER TABLE ONLY public.organization_member
 
 
 --
--- TOC entry 2884 (class 2606 OID 16517)
+-- TOC entry 2884 (class 2606 OID 16523)
 -- Name: organization_notification organization_notification_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -666,7 +667,7 @@ ALTER TABLE ONLY public.organization_notification
 
 
 --
--- TOC entry 2872 (class 2606 OID 16519)
+-- TOC entry 2872 (class 2606 OID 16525)
 -- Name: organization organization_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -675,7 +676,7 @@ ALTER TABLE ONLY public.organization
 
 
 --
--- TOC entry 2886 (class 2606 OID 16521)
+-- TOC entry 2886 (class 2606 OID 16527)
 -- Name: organization_tag organization_tag_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -684,7 +685,7 @@ ALTER TABLE ONLY public.organization_tag
 
 
 --
--- TOC entry 2888 (class 2606 OID 16523)
+-- TOC entry 2888 (class 2606 OID 16529)
 -- Name: rsvp rsvp_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -693,7 +694,7 @@ ALTER TABLE ONLY public.rsvp
 
 
 --
--- TOC entry 2890 (class 2606 OID 16525)
+-- TOC entry 2890 (class 2606 OID 16531)
 -- Name: task task_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -702,7 +703,7 @@ ALTER TABLE ONLY public.task
 
 
 --
--- TOC entry 2892 (class 2606 OID 16527)
+-- TOC entry 2892 (class 2606 OID 16533)
 -- Name: terms_conditions terms_conditions_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -711,7 +712,7 @@ ALTER TABLE ONLY public.terms_conditions
 
 
 --
--- TOC entry 2896 (class 2606 OID 16529)
+-- TOC entry 2898 (class 2606 OID 16535)
 -- Name: user_email user_email_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -720,7 +721,7 @@ ALTER TABLE ONLY public.user_email
 
 
 --
--- TOC entry 2898 (class 2606 OID 16531)
+-- TOC entry 2900 (class 2606 OID 16537)
 -- Name: user_form_template user_form_template_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -729,7 +730,7 @@ ALTER TABLE ONLY public.user_form_template
 
 
 --
--- TOC entry 2894 (class 2606 OID 16533)
+-- TOC entry 2894 (class 2606 OID 16539)
 -- Name: user user_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -738,7 +739,16 @@ ALTER TABLE ONLY public."user"
 
 
 --
--- TOC entry 2899 (class 2606 OID 16534)
+-- TOC entry 2896 (class 2606 OID 16712)
+-- Name: user user_primary_email_key; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."user"
+    ADD CONSTRAINT user_primary_email_key UNIQUE (primary_email);
+
+
+--
+-- TOC entry 2901 (class 2606 OID 16540)
 -- Name: check_in check_in_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -747,7 +757,7 @@ ALTER TABLE ONLY public.check_in
 
 
 --
--- TOC entry 2900 (class 2606 OID 16539)
+-- TOC entry 2902 (class 2606 OID 16545)
 -- Name: check_in check_in_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -756,7 +766,7 @@ ALTER TABLE ONLY public.check_in
 
 
 --
--- TOC entry 2903 (class 2606 OID 16544)
+-- TOC entry 2905 (class 2606 OID 16550)
 -- Name: event_admin event_admin_admin_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -765,7 +775,7 @@ ALTER TABLE ONLY public.event_admin
 
 
 --
--- TOC entry 2904 (class 2606 OID 16549)
+-- TOC entry 2906 (class 2606 OID 16555)
 -- Name: event_admin event_admin_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -774,7 +784,7 @@ ALTER TABLE ONLY public.event_admin
 
 
 --
--- TOC entry 2905 (class 2606 OID 16554)
+-- TOC entry 2907 (class 2606 OID 16560)
 -- Name: event_form event_form_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -783,7 +793,7 @@ ALTER TABLE ONLY public.event_form
 
 
 --
--- TOC entry 2906 (class 2606 OID 16559)
+-- TOC entry 2908 (class 2606 OID 16565)
 -- Name: event_invitation event_invitation_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -792,7 +802,7 @@ ALTER TABLE ONLY public.event_invitation
 
 
 --
--- TOC entry 2907 (class 2606 OID 16564)
+-- TOC entry 2909 (class 2606 OID 16570)
 -- Name: event_invitation event_invitation_receiver_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -801,7 +811,7 @@ ALTER TABLE ONLY public.event_invitation
 
 
 --
--- TOC entry 2908 (class 2606 OID 16569)
+-- TOC entry 2910 (class 2606 OID 16575)
 -- Name: event_notification event_notification_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -810,7 +820,7 @@ ALTER TABLE ONLY public.event_notification
 
 
 --
--- TOC entry 2909 (class 2606 OID 16574)
+-- TOC entry 2911 (class 2606 OID 16580)
 -- Name: event_notification event_notification_receiver_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -819,7 +829,7 @@ ALTER TABLE ONLY public.event_notification
 
 
 --
--- TOC entry 2901 (class 2606 OID 16579)
+-- TOC entry 2903 (class 2606 OID 16585)
 -- Name: event event_organization_id_fkey1; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -828,7 +838,7 @@ ALTER TABLE ONLY public.event
 
 
 --
--- TOC entry 2902 (class 2606 OID 16584)
+-- TOC entry 2904 (class 2606 OID 16590)
 -- Name: event event_owner_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -837,7 +847,7 @@ ALTER TABLE ONLY public.event
 
 
 --
--- TOC entry 2910 (class 2606 OID 16589)
+-- TOC entry 2912 (class 2606 OID 16595)
 -- Name: event_tag event_tag_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -846,7 +856,7 @@ ALTER TABLE ONLY public.event_tag
 
 
 --
--- TOC entry 2911 (class 2606 OID 16594)
+-- TOC entry 2913 (class 2606 OID 16600)
 -- Name: follow follow_follower_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -855,7 +865,7 @@ ALTER TABLE ONLY public.follow
 
 
 --
--- TOC entry 2912 (class 2606 OID 16599)
+-- TOC entry 2914 (class 2606 OID 16605)
 -- Name: follow follow_following_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -864,7 +874,7 @@ ALTER TABLE ONLY public.follow
 
 
 --
--- TOC entry 2914 (class 2606 OID 16604)
+-- TOC entry 2916 (class 2606 OID 16610)
 -- Name: organization_admin organization_admin_admin_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -873,7 +883,7 @@ ALTER TABLE ONLY public.organization_admin
 
 
 --
--- TOC entry 2915 (class 2606 OID 16609)
+-- TOC entry 2917 (class 2606 OID 16615)
 -- Name: organization_admin organization_admin_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -882,7 +892,7 @@ ALTER TABLE ONLY public.organization_admin
 
 
 --
--- TOC entry 2916 (class 2606 OID 16614)
+-- TOC entry 2918 (class 2606 OID 16620)
 -- Name: organization_form_template organization_form_template_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -891,7 +901,7 @@ ALTER TABLE ONLY public.organization_form_template
 
 
 --
--- TOC entry 2917 (class 2606 OID 16619)
+-- TOC entry 2919 (class 2606 OID 16625)
 -- Name: organization_invitation organization_invitation_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -900,7 +910,7 @@ ALTER TABLE ONLY public.organization_invitation
 
 
 --
--- TOC entry 2918 (class 2606 OID 16624)
+-- TOC entry 2920 (class 2606 OID 16630)
 -- Name: organization_invitation organization_invitation_receiver_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -909,7 +919,7 @@ ALTER TABLE ONLY public.organization_invitation
 
 
 --
--- TOC entry 2919 (class 2606 OID 16629)
+-- TOC entry 2921 (class 2606 OID 16635)
 -- Name: organization_join_request organization_join_request_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -918,7 +928,7 @@ ALTER TABLE ONLY public.organization_join_request
 
 
 --
--- TOC entry 2920 (class 2606 OID 16634)
+-- TOC entry 2922 (class 2606 OID 16640)
 -- Name: organization_join_request organization_join_request_requester_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -927,7 +937,7 @@ ALTER TABLE ONLY public.organization_join_request
 
 
 --
--- TOC entry 2921 (class 2606 OID 16639)
+-- TOC entry 2923 (class 2606 OID 16645)
 -- Name: organization_member organization_member_member_id_fkey1; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -936,7 +946,7 @@ ALTER TABLE ONLY public.organization_member
 
 
 --
--- TOC entry 2922 (class 2606 OID 16644)
+-- TOC entry 2924 (class 2606 OID 16650)
 -- Name: organization_member organization_member_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -945,7 +955,7 @@ ALTER TABLE ONLY public.organization_member
 
 
 --
--- TOC entry 2923 (class 2606 OID 16649)
+-- TOC entry 2925 (class 2606 OID 16655)
 -- Name: organization_notification organization_notification_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -954,7 +964,7 @@ ALTER TABLE ONLY public.organization_notification
 
 
 --
--- TOC entry 2924 (class 2606 OID 16654)
+-- TOC entry 2926 (class 2606 OID 16660)
 -- Name: organization_notification organization_notification_receiver_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -963,7 +973,7 @@ ALTER TABLE ONLY public.organization_notification
 
 
 --
--- TOC entry 2913 (class 2606 OID 16659)
+-- TOC entry 2915 (class 2606 OID 16665)
 -- Name: organization organization_owner_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -972,7 +982,7 @@ ALTER TABLE ONLY public.organization
 
 
 --
--- TOC entry 2925 (class 2606 OID 16664)
+-- TOC entry 2927 (class 2606 OID 16670)
 -- Name: organization_tag organization_tag_organization_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -981,7 +991,7 @@ ALTER TABLE ONLY public.organization_tag
 
 
 --
--- TOC entry 2926 (class 2606 OID 16669)
+-- TOC entry 2928 (class 2606 OID 16675)
 -- Name: rsvp rsvp_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -990,7 +1000,7 @@ ALTER TABLE ONLY public.rsvp
 
 
 --
--- TOC entry 2927 (class 2606 OID 16674)
+-- TOC entry 2929 (class 2606 OID 16680)
 -- Name: rsvp rsvp_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -999,7 +1009,7 @@ ALTER TABLE ONLY public.rsvp
 
 
 --
--- TOC entry 2928 (class 2606 OID 16679)
+-- TOC entry 2930 (class 2606 OID 16685)
 -- Name: task task_assignee_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -1008,7 +1018,7 @@ ALTER TABLE ONLY public.task
 
 
 --
--- TOC entry 2929 (class 2606 OID 16684)
+-- TOC entry 2931 (class 2606 OID 16690)
 -- Name: task task_assigner_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -1017,7 +1027,7 @@ ALTER TABLE ONLY public.task
 
 
 --
--- TOC entry 2930 (class 2606 OID 16689)
+-- TOC entry 2932 (class 2606 OID 16695)
 -- Name: task task_event_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -1026,7 +1036,7 @@ ALTER TABLE ONLY public.task
 
 
 --
--- TOC entry 2931 (class 2606 OID 16694)
+-- TOC entry 2933 (class 2606 OID 16700)
 -- Name: user_email user_email_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -1035,7 +1045,7 @@ ALTER TABLE ONLY public.user_email
 
 
 --
--- TOC entry 2932 (class 2606 OID 16699)
+-- TOC entry 2934 (class 2606 OID 16705)
 -- Name: user_form_template user_form_template_user_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -1043,7 +1053,7 @@ ALTER TABLE ONLY public.user_form_template
     ADD CONSTRAINT user_form_template_user_id_fkey FOREIGN KEY (user_id) REFERENCES public."user"(id);
 
 
--- Completed on 2019-09-20 02:59:36 PDT
+-- Completed on 2019-10-01 19:42:04 PDT
 
 --
 -- PostgreSQL database dump complete
