@@ -5,7 +5,7 @@ import (
     "log"
     "os"
     "net/http"
-	"server/pkg/routes"
+	"server/pkg/http/rest"
 	"server/pkg/storage/pg"
     // "encoding/gob"
 
@@ -33,7 +33,7 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-    router := routes.Handler()
+    router := rest.Handler()
     http.Handle("/", router)
     fmt.Println("flowing thru at http://localhost:5000")
 	log.Fatal(http.ListenAndServe(":5000", nil))

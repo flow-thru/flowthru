@@ -1,5 +1,5 @@
 
-package routes
+package rest
 
 import (
     "net/http"
