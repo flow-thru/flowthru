@@ -25,14 +25,6 @@ Now create a directory to serve as the local host mount point for Postgres data 
 mkdir -p $HOME/docker/volumes/postgres
 ```
 
-If you wish to remove you persisted data, you can simply delete the path you created with the following command:
-
-```
-rm -r $HOME/docker/volumes/postgres
-```
-
-This will come in handy in cases where someone pushes changes to the database, and you want to see the changes reflected on your Docker container.
-
 #### 3. Run the Docker Container
 
 Run the Flowthru Database server in a container by running the following command:
@@ -78,4 +70,21 @@ docker container stop test-db
 ```
 
 If you wish to rerun the container, simply go through the instructions in Step 3
+
+#### 7. Removing persisted data
+
+If you wish to remove you persisted data, you want to first stop the conatiner as detailed in Step 6. Then delete and recreate the volume path you made in step 2:
+
+```
+rm -r $HOME/docker/volumes/postgres
+mkdir -p $HOME/docker/volumes/postgres
+```
+
+#### 8. Rebuilding the container
+
+This will come in handy in cases where someone pushes changes to the database, and you want to see the changes reflected on your Docker container. In this case, you want to preform Steps 6, 7, and run the following command to delete the Flowthru Docker Image:
+
+```
+docker rmi postgres-flowthru-test-db
+```
 
