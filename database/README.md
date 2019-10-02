@@ -6,26 +6,45 @@ These are not required, but recommended if you are unsure of what you are doing
 - [pgAdmin 4](https://www.pgadmin.org/)
 
 ### Running the Database
+**Note: All instructions assume you are in the `database` directory**
+
+#### 1. Build the Docker Image
 First, build the Postgres Flowthru image with Docker:  
 
 ```
 docker build . -t postgres-flowthru-test-db
 ```
 
-Now create a directory to serve as the local host mount point for Postgres data files:  
+After running the build command, you should see the `postgres-flowthru-test-db` listed as an available image when running the command `docker images`.
+
+#### 2. Create a mounting point for the Docker Container
+
+Now create a directory to serve as the local host mount point for Postgres data files. This is done so data can persist even if you shut down and rerun the container.  
 
 ```
 mkdir -p $HOME/docker/volumes/postgres
 ```
 
-Run the Flowthru Database local server in a container by running the following command:
+If you wish to remove you persisted data, you can simply delete the path you created with the following command:
+
+```
+rm -r $HOME/docker/volumes/postgres
+```
+
+This will come in handy in cases where someone pushes changes to the database, and you want to see the changes reflected on your Docker container.
+
+#### 3. Run the Docker Container
+
+Run the Flowthru Database server in a container by running the following command:
 
 ```
 docker run --rm -d --name test-db \
-    -p 5432:5432 \
-    -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data \
-    postgres-flowthru-test-db
+    -p 5432:5432 \   # Maps the conatiners port 5432 with your computer's port 5432
+    -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data \  # Uses the folder you created to persist data
+    postgres-flowthru-test-db  # Uses the Flowthru Docker Image to run the container
 ```
+
+#### 4. Interfacing with the Database Docker Container
 
 To view the tables, launch pgAdmin, right click `Servers` > `Create` > `Server...`
 
@@ -40,10 +59,23 @@ Under Connection, fill in the following:
 
 You can view the tables under `Servers` > `flowthru` > `Databases` > `test` > `Schemas` > `public` > `Tables` on the sidebar.  
 
-Insert sample testing data using the following docker command:
+#### 5. Using Sample Data
+To insert sample testing data using the following docker command:
 
 ```
-docker container exec \
-    -i test-db \
-    psql -U user test < ${PWD}/sample-data.sql
+docker container exec \  # Execure a container command
+    -i test-db \  # Use the Flowthru Database Docker Container
+    psql -U user test < ${PWD}/sample-data.sql  # Bash command to read in data
 ```
+
+#### 6. Shutting down the Container
+In some cases, you may find yourself wanting to shut down the container. This may include times where you want to wipe your persisted database data or no longer are using the database.  
+
+You can shut down the container with the following command:
+
+```
+docker container stop test-db
+```
+
+If you wish to rerun the container, simply go through the instructions in Step 3
+
