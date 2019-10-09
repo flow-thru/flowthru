@@ -2,6 +2,7 @@
 package pg
 
 // Organization is a struct type for organization entities.
+// TODO: REMOVE STRUCT FROM HERE, AND DEFINE IN SEPERATE FILE IN FLOWTHRU FOLDER
 type Organization struct {
     ID       int
     OwnerID  int
