@@ -5,8 +5,8 @@ import (
     "log"
     "os"
     "net/http"
-	"server/pkg/http/rest"
-	"server/pkg/storage/pg"
+	"server/internal/http/rest"  // changes made here for new path to rest and pg folder
+	"server/internal/platform/pg"
     // "encoding/gob"
 
     // "github.com/gorilla/sessions"
