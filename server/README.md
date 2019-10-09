@@ -27,7 +27,7 @@ To learn more about Auth0 in golang, please visit [Auth0's Golang documentation]
 To start the server application, run
 
 ```
-go run cmd/flowthru-server/main.go
+go run cmd/server/main.go
 ```
 
 The server application will be running on http://localhost:5000
