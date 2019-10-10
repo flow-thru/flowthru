@@ -31,9 +31,9 @@ Run the Flowthru Database server in a container by running the following command
 
 ```
 docker run --rm -d --name test-db \
-    -p 5432:5432 \   # Maps the conatiners port 5432 with your computer's port 5432
-    -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data \  # Uses the folder you created to persist data
-    postgres-flowthru-test-db  # Uses the Flowthru Docker Image to run the container
+    -p 5432:5432 \
+    -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data \
+    postgres-flowthru-test-db
 ```
 
 #### 4. Interfacing with the Database Docker Container
@@ -55,9 +55,9 @@ You can view the tables under `Servers` > `flowthru` > `Databases` > `test` > `S
 To insert sample testing data using the following docker command:
 
 ```
-docker container exec \  # Execure a container command
-    -i test-db \  # Use the Flowthru Database Docker Container
-    psql -U user test < ${PWD}/sample-data.sql  # Bash command to read in data
+docker container exec \
+    -i test-db \
+    psql -U user test < ${PWD}/sample-data.sql 
 ```
 
 #### 6. Shutting down the Container
