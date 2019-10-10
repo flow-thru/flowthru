@@ -5,15 +5,11 @@ import (
     "log"
     "os"
     "net/http"
-	"server/internal/http/rest"  // changes made here for new path to rest and pg folder
-	"server/internal/platform/pg"
-    // "encoding/gob"
-
-    // "github.com/gorilla/sessions"
+	"server/internal/http/rest"
+	"server/internal/platform/database/pg"
 )
 
 var (
-    // store *session.FilesystemStore
     DBCreds = fmt.Sprintf(
         "host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
         os.Getenv("FLOWTHRU_DB_HOST"),
@@ -26,8 +22,6 @@ var (
 
 
 func main() {
-    // store = sessions.NewFilesystemStore("", []byte(os.Getenv("FLOWTHRU_SESSION_KEY")))
-    // gob.Register(map[string]interface{}{})
     _, err := pg.NewDB(DBCreds)
 
     if err != nil {
