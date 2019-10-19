@@ -2,6 +2,8 @@
 - [Go](https://golang.org/)
 - [Postman](https://www.getpostman.com/) (optional)
 
+> Note: This project uses [Go Modules](https://github.com/golang/go/wiki/Modules) which was introduced in v1.11. This means that you need at leave v1.11 to run the project.
+
 ### Running the Backend
 
 After you have [set up the databse](https://github.com/flow-thru/flowthru/tree/master/database/README.md), export the database credentials as environment variables
