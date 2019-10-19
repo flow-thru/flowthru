@@ -1,8 +1,6 @@
 ## Dependencies
-- [Go](https://golang.org/)
+- [Go v1.12](https://golang.org/)
 - [Postman](https://www.getpostman.com/) (optional)
-
-> Note: This project uses [Go Modules](https://github.com/golang/go/wiki/Modules) which was introduced in v1.11. This means that you need at leave v1.11 to run the project.
 
 ### Running the Backend
 
