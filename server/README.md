@@ -1,5 +1,5 @@
 ## Dependencies
-- [Go](https://golang.org/)
+- [Go v1.12](https://golang.org/)
 - [Postman](https://www.getpostman.com/) (optional)
 
 ### Running the Backend
