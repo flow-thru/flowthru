@@ -28,7 +28,6 @@ jobs:
         - docker build ./database/ -t postgres-flowthru-test-db
         - docker run -d --name test-db -p 127.0.0.1:80:5432 postgres-flowthru-test-db
         - sleep 15
-        - docker container exec -i test-db psql -U user test < ${PWD}/database/sample-data.sql
         - cd server; go test -v ./...
       name: "back end tests"
     - stage: "deploy to production"

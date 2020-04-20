@@ -6,7 +6,7 @@ import (
     "os"
     "net/http"
 	"server/internal/http/rest"
-	"server/internal/platform/database/pgsql"
+	"server/internal/platform/database/pg"
 	"server/internal/platform/auth"
 )
 

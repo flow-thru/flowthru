@@ -1,9 +1,6 @@
 ## Dependencies
 ### Software
 - [Docker](https://docs.docker.com/)
-### Interfaces
-These are not required, but recommended if you are unsure of what you are doing
-- [pgAdmin 4](https://www.pgadmin.org/)
 
 ### Running the Database
 **Note: All instructions assume you are in the `database` directory**
@@ -38,18 +35,17 @@ docker run --rm -d --name test-db \
 
 #### 4. Interfacing with the Database Docker Container
 
-To view the tables, launch pgAdmin, right click `Servers` > `Create` > `Server...`
+You can interface with the database with following command:
 
-Under General fill in the following:
-* **`Name`**: flowthru
+```
+docker exec -it test-db psql -U user test
+```
 
-Under Connection, fill in the following:
-* **`Host name/address`**: localhost
-* **`Port`**: 5432
-* **`Username`**: user
-* **`Password`**: password
+This will place you into an command-line instance with PostgreSQL.  
 
-You can view the tables under `Servers` > `flowthru` > `Databases` > `test` > `Schemas` > `public` > `Tables` on the sidebar.  
+To view all tables inside the database, you can run the command `\d`. You can see a list of useful commands [at this website](http://postgresguide.com/utilities/psql.html)  
+
+To exit the command line interface, you type <Ctrl>-D.
 
 #### 5. Using Sample Data
 To insert sample testing data using the following docker command:
