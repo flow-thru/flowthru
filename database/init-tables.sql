@@ -7,10 +7,10 @@ CREATE TABLE users (
     first_name VARCHAR (50) NOT NULL,
     last_name VARCHAR (50) NOT NULL,
 
-    PRIMARY KEY user_id,
+    PRIMARY KEY (user_id),
 );
 
-    -- USER EMAIL
+-- USER EMAIL
 CREATE TABLE user_emails (
     email text NOT NULL,
     user_id int NOT NULL
@@ -23,7 +23,7 @@ CREATE TABLE organizations (
     owner_id INT NOT NULL,
 
     FOREIGN KEY (owner_id) REFERENCES users(user_id),
-    PRIMARY KEY organization_id,
+    PRIMARY KEY (organization_id),
 );
 
 -- EVENTS --
@@ -34,6 +34,6 @@ CREATE TABLE events (
 
     FOREIGN KEY (owner_id) REFERENCES users(user_id),
     FOREIGN KEY (organization_id) REFERENCES organizations(organization_id),
-    PRIMARY KEY event_id,
+    PRIMARY KEY (event_id),
 );
 
