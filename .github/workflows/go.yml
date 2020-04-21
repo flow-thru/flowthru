@@ -43,9 +43,8 @@ jobs:
       run: |
         cd server
         go get -v -t -d ./...
-        pwd
 
     - name: Test
       run: |
-        pwd
+        cd server
         go test -v ./...
