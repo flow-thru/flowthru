@@ -1,0 +1,40 @@
+name: Node.js
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - 'client/**'
+  pull_request:
+    branches: [ master ]
+    paths:
+    - 'client/**'
+
+jobs:
+  test:
+    name: Node.js Tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set Up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies 
+      working-directory: ./client
+      run: npm ci
+
+    - name: Run Tests 
+      working-directory: ./client
+      run: npm test
+      env:
+        CI: true
+

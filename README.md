@@ -16,6 +16,11 @@
     <a href="https://join.slack.com/t/flowthru/shared_invite/enQtNjYxMDM2Nzc5NDkzLTJiZTU0NGQ0ZTc0NjRjNDMxNDY4ODU0YzA4MTUwZTU5YmMyZTAyZmFiMjY4ZWFkNzI5MDYxMTUyMTY0Mjc3MTQ"><img src="https://img.shields.io/badge/chat-on%20slack-brightgreen.svg" alt="Slack"></a>
 </p>
 
+<p align="left">
+    <img src="https://github.com/flow-thru/flowthru/workflows/Node.js/badge.svg" alt="Node.js Build">
+    <img src="https://github.com/flow-thru/flowthru/workflows/Go/badge.svg)" alt="Pull Go Build">
+</p>
+
 Flowthru is an open source project and is currently under development. There are many ways to participate in the development process. One can:
 
 - Submit [bugs and feature requests](https://github.com/flow-thru/flowthru/issues)
