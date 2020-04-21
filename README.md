@@ -1,7 +1,6 @@
 <p align="center">
   <img src="https://github.com/flow-thru/front-end-design/blob/master/banners/png/flowthru_plain_large.png" alt="flowthru" width="226">
   <br>
-  <a href="https://travis-ci.com/flow-thru/flowthru"><img src="https://travis-ci.com/flow-thru/flowthru.svg?branch=master" alt="Build Status"></a>
 </p>
 
 <p align="center">An event management application.</p>
