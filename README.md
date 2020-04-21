@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/flow-thru/front-end-design/blob/master/banners/png/flowthru_plain_large.png" alt="flowthru" width="226">
+  <img src="https://github.com/flow-thru/resources/blob/master/banners/png/flowthru_plain_large.png" alt="flowthru" width="226">
   <br>
 </p>
 
