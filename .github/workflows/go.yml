@@ -3,12 +3,14 @@ name: Go
 on:
   push:
     branches: [ master ]
-#    paths:
-#    - 'server/**'
+    paths:
+    - 'server/**'
+    - 'database/**'
   pull_request:
     branches: [ master ]
-#    paths:
-#    - 'server/**'
+    paths:
+    - 'server/**'
+    - 'database/**'
 
 jobs:
   test:
@@ -27,21 +29,23 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build database
+      working-directory: ./database
+      run: |
+        docker build . -t flowthru-db
+        docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
+        sleep 15
+        docker logs flowthru-db
+
+    - name: Install dependencies
+      working-directory: ./server
+      run: go get -v -t -d ./...
+
+    - name: Test
       env:
         FLOWTHRU_TEST_DB_HOST: localhost
         FLOWTHRU_TEST_DB_PORT: 80
         FLOWTHRU_TEST_DB_USER: user
         FLOWTHRU_TEST_DB_PASSWORD: password
         FLOWTHRU_TEST_DB_NAME: test
-      run: |
-        docker build ./database/ -t flowthru-db
-        docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
-        sleep 15
-
-    - name: Install dependencies
-      run: |
-        cd server
-        go get -v -t -d ./...
-
-    - name: Test
+      working-directory: ./server
       run: go test -v ./...
