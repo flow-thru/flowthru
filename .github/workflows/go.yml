@@ -14,7 +14,7 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Go Tests
     runs-on: ubuntu-latest
     steps:
     - name: Set up Go 1.12
@@ -40,7 +40,7 @@ jobs:
       working-directory: ./server
       run: go get -v -t -d ./...
 
-    - name: Test
+    - name: Run Tests
       env:
         FLOWTHRU_TEST_DB_HOST: localhost
         FLOWTHRU_TEST_DB_PORT: 80

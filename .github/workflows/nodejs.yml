@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: test
+    name: Node.js Tests
     runs-on: ubuntu-latest
 
     strategy:
