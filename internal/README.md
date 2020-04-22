@@ -1,7 +1,3 @@
-## Dependencies
-- [Go v1.14](https://golang.org/)
-- [Docker](https://docs.docker.com/)
-
 ## Directory Structure
 
 ```
