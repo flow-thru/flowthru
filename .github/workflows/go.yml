@@ -30,8 +30,7 @@ jobs:
       run: make database-build
 
     - name: Run database
-      run: |
-        make database-run
+      run: make database-run
 
     - name: Database loading
       run: |
