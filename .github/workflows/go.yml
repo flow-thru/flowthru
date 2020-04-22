@@ -27,23 +27,22 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build database
-      run: make database-build
-
-    - name: Run database
-      run: docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
-
-    - name: Database loading
+      working-directory: ./database
       run: |
+        docker build . -t flowthru-db
+        docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
         sleep 15
         docker logs flowthru-db
 
     - name: Install dependencies
-      run: make backend-dependencies
+      run: go get -v -t -d ./...
+    - name: Install dependencies
 
     - name: Build
-      run: make backend-build
-      env:
-        FLOWTHRU_DB_PORT: 80
+      working-directory: ./cmd
+      run: go build -o flowthru.out
 
     - name: Run Tests
-      run: make backend-test
+      run: go test -v ./...
+      env:
+        FLOWTHRU_DB_PORT: 80
