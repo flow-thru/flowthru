@@ -32,6 +32,9 @@ jobs:
     - name: Run database
       run: |
         make database-run
+
+    - name: Database loading
+      run: |
         sleep 15
         docker logs flowthru-db
 
