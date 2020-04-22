@@ -27,8 +27,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build database
+      working-directory: ./internal/repository/pg
       run: |
-        docker build internal/repository/pg -t flowthru-db
+        docker build . -t flowthru-db
         docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
         sleep 15
         docker logs flowthru-db
