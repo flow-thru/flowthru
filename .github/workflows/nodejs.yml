@@ -33,12 +33,14 @@ jobs:
       run: npm ci
 
     - name: Build
-      run: make web-app-build
+      working-directory: ./web-app
+      run: npm build .
       env:
         CI: true
 
     - name: Run Tests 
-      run: make web-app-test
+      working-directory: ./web-app
+      run: npm test
       env:
         CI: true
 
