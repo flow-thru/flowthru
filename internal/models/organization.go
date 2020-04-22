@@ -1,5 +1,5 @@
 
-package flowthru
+package models
 
 type Organization struct {
     ID       int

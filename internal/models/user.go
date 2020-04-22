@@ -1,5 +1,5 @@
 
-package flowthru
+package models
 
 type User struct {
 	ID int
