@@ -30,9 +30,12 @@ jobs:
       working-directory: ./internal/repository/pg
       run: |
         docker build . -t flowthru-db
-        docker run -d --name flowthru-db -p 127.0.0.1:5432:5432 flowthru-db
+        docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
         sleep 15
         docker logs flowthru-db
+
+    - name: check
+      run: docker container ls -a
 
     - name: Install dependencies
       run: go get -v -t -d ./...
@@ -43,3 +46,5 @@ jobs:
 
     - name: Run Tests
       run: go test -v ./...
+      env:
+        FLOWTHRU_DB_PORT: 80
