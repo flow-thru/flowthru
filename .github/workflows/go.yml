@@ -4,13 +4,13 @@ on:
   push:
     branches: [ master ]
     paths:
-    - 'server/**'
-    - 'database/**'
+    - 'cmd/**'
+    - 'internal/**'
   pull_request:
     branches: [ master ]
     paths:
-    - 'server/**'
-    - 'database/**'
+    - 'cmd/**'
+    - 'internal/**'
 
 jobs:
   test:
@@ -29,7 +29,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build database
-      working-directory: ./database
+      working-directory: ./internal/repository/pg
       run: |
         docker build . -t flowthru-db
         docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
@@ -37,7 +37,6 @@ jobs:
         docker logs flowthru-db
 
     - name: Install dependencies
-      working-directory: ./server
       run: go get -v -t -d ./...
 
     - name: Run Tests
@@ -47,5 +46,4 @@ jobs:
         FLOWTHRU_TEST_DB_USER: user
         FLOWTHRU_TEST_DB_PASSWORD: password
         FLOWTHRU_TEST_DB_NAME: test
-      working-directory: ./server
       run: go test -v ./...

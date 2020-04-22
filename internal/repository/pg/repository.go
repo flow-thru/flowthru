@@ -1,5 +1,5 @@
 
-package pgsql
+package pg
 
 import (
     "database/sql"
