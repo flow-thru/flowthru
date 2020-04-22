@@ -36,7 +36,9 @@ jobs:
       run: |
         sleep 15
         docker logs flowthru-db
-        docker container ls -a
+        make database-start
+        sleep 15
+        docker logs flowthru-db
 
     - name: Install dependencies
       run: make backend-dependencies
