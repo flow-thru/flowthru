@@ -17,33 +17,29 @@ jobs:
     name: Go Tests
     runs-on: ubuntu-latest
     steps:
-    - name: Set up Go 1.12
-      env:
-        GO111MODULE: on
+    - name: Set up Go 1.14
       uses: actions/setup-go@v1
       with:
-        go-version: 1.12
+        go-version: 1.14
       id: go
         
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
 
     - name: Build database
-      working-directory: ./internal/repository/pg
+      run: make database-build
+
+    - name: Run database
       run: |
-        docker build . -t flowthru-db
-        docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
+        make database-run
         sleep 15
         docker logs flowthru-db
 
     - name: Install dependencies
-      run: go get -v -t -d ./...
+      run: make backend-dependencies
+
+    - name: Build
+      run: make backend-build
 
     - name: Run Tests
-      env:
-        FLOWTHRU_TEST_DB_HOST: localhost
-        FLOWTHRU_TEST_DB_PORT: 80
-        FLOWTHRU_TEST_DB_USER: user
-        FLOWTHRU_TEST_DB_PASSWORD: password
-        FLOWTHRU_TEST_DB_NAME: test
-      run: go test -v ./...
+      run: make backend-test
