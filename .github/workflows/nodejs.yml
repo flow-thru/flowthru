@@ -4,11 +4,11 @@ on:
   push:
     branches: [ master ]
     paths:
-    - 'client/**'
+    - 'web-app/**'
   pull_request:
     branches: [ master ]
     paths:
-    - 'client/**'
+    - 'web-app/**'
 
 jobs:
   test:
@@ -29,11 +29,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies 
-      working-directory: ./client
+      working-directory: ./web-app
       run: npm ci
 
     - name: Run Tests 
-      working-directory: ./client
+      working-directory: ./web-app
       run: npm test
       env:
         CI: true
