@@ -4,7 +4,6 @@ import (
     "testing"
     "os"
     "fmt"
-    _ "github.com/joho/godotenv/autoload"
 )
 
 // TestNewDB tests if a connections is correctly established.
