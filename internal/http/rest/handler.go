@@ -5,8 +5,6 @@ import (
     "net/http"
     "encoding/json"
 
-    "github.com/flow-thru/flowthru/internal/middleware/auth"
-
     "github.com/gorilla/mux"
 )
 

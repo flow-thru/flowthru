@@ -5,22 +5,14 @@ import (
     "log"
     "os"
     "net/http"
-    "github.com/joho/godotenv"
+    _ "github.com/joho/godotenv/autoload"
 	"github.com/flow-thru/flowthru/internal/http/rest"
 	"github.com/flow-thru/flowthru/internal/repository/pg"
-	"github.com/flow-thru/flowthru/internal/middleware/auth"
 )
 
-func init() {
-    // If an environment variable is already defined, Go will prefer that
-    // instead of the value set in .env.
-    if err :=godotenv.Load(); err != nil {
-        log.Print("No .env file found")
-    }
-}
-
 func main() {
-    _, err := pgsql.NewDB(
+    fmt.Println(os.Getenv("FLOWTHRU_DB_PORT)"))
+    _, err := pg.NewDB(
         fmt.Sprintf(
             "host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
             os.Getenv("FLOWTHRU_DB_HOST"),

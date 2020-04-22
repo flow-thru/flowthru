@@ -1,7 +1,7 @@
 
 package pg
 
-import "internal/models"
+import "github.com/flow-thru/flowthru/internal/models"
 
 // OwnersOrganization gathers all of the organizations that belongs to a user.
 // It queries for all organizations that belong to a specific owner ID.
