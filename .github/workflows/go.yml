@@ -29,7 +29,7 @@ jobs:
     - name: Build database
       working-directory: ./database
       run: |
-        docker build . -t flowthru-db
+        docker build internal/repository/pg -t flowthru-db
         docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
         sleep 15
         docker logs flowthru-db
