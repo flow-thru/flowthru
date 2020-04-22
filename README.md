@@ -17,7 +17,7 @@
 
 <p align="left">
     <img src="https://github.com/flow-thru/flowthru/workflows/Node.js/badge.svg" alt="Node.js Build">
-    <img src="https://github.com/flow-thru/flowthru/workflows/Go/badge.svg)" alt="Go Build">
+    <img src="https://github.com/flow-thru/flowthru/workflows/Go/badge.svg" alt="Go Build">
 </p>
 
 Flowthru is an open source project and is currently under development. There are many ways to participate in the development process. One can:
