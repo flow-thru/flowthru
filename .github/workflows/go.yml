@@ -30,13 +30,10 @@ jobs:
       run: make database-build
 
     - name: Run database
-      run: make database-run
+      run: docker run -d --name flowthru-db -p 127.0.0.1:80:5432 flowthru-db
 
     - name: Database loading
       run: |
-        sleep 15
-        docker logs flowthru-db
-        make database-start
         sleep 15
         docker logs flowthru-db
 
@@ -45,6 +42,8 @@ jobs:
 
     - name: Build
       run: make backend-build
+      env:
+        FLOWTHRU_DB_PORT: 80
 
     - name: Run Tests
       run: make backend-test
