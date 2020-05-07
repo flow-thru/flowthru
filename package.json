@@ -1,0 +1,14 @@
+{
+  "name": "flowthru",
+  "private": true,
+  "version": "0.0.1",
+  "repository": "git@github.com:flow-thru/flowthru.git",
+  "author": "flowthru",
+  "license": "MIT",
+  "scripts": {
+    "install": "docker container rm -f flowthru-db; docker rmi -f flowthru-db; docker build internal/repository/pg -t flowthru-db; go get -v -t -d ./...",
+    "start": "docker run -d --name flowthru-db -p 127.0.0.1:5432:5432 flowthru-db; go run cmd/main.go",
+    "stop": "docker stop flowthru-db",
+    "test": "go test -v ./..."
+  }
+}

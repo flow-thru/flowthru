@@ -1,6 +1,5 @@
 {
-  "name": "client",
-  "version": "0.1.0",
+  "name": "web-app",
   "private": true,
   "dependencies": {
     "antd": "^3.23.2",

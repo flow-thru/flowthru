@@ -30,17 +30,17 @@ jobs:
 
     - name: Install dependencies 
       working-directory: ./web-app
-      run: npm ci
+      run: yarn install
 
     - name: Build
       working-directory: ./web-app
-      run: npm build .
+      run: yarn build .
       env:
         CI: true
 
     - name: Run Tests 
       working-directory: ./web-app
-      run: npm test
+      run: yarn test
       env:
         CI: true
 
