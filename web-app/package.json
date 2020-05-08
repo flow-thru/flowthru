@@ -2,7 +2,8 @@
   "name": "web-app",
   "private": true,
   "dependencies": {
-    "antd": "^3.23.2",
+    "@ant-design/icons": "^4.1.0",
+    "antd": "^4.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-fontawesome": "^1.6.1",
