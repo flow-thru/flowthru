@@ -5,13 +5,11 @@ import (
     "log"
     "os"
     "net/http"
-    _ "github.com/joho/godotenv/autoload"
 	"github.com/flow-thru/flowthru/internal/http/rest"
 	"github.com/flow-thru/flowthru/internal/repository/pg"
 )
 
 func main() {
-    fmt.Println(os.Getenv("FLOWTHRU_DB_PORT)"))
     _, err := pg.NewDB(
         fmt.Sprintf(
             "host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
@@ -23,6 +21,7 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
+    fmt.Println(os.Getenv("FLOWTHRU_DB_PORT"))
 
     router := rest.Handler()
     http.Handle("/", router)
