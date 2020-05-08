@@ -40,7 +40,7 @@ jobs:
 
     - name: Run Tests 
       working-directory: ./web-app
-      run: yarn test
+      run: yarn test --passWithNoTests
       env:
         CI: true
 
