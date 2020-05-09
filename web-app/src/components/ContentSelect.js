@@ -12,19 +12,19 @@ const menu = (
                 <Menu.Item key="Top Organizations" icon={<OrderedListOutlined />}>Top Organizations</Menu.Item>
             </Menu.ItemGroup>
             <Menu.ItemGroup title="My Organizations">
-                <Menu.Item key="setting:3">Option 3</Menu.Item>
-                <Menu.Item key="setting:4">Option 4</Menu.Item>
-                <Menu.Item key="setting:5">Option 5</Menu.Item>
-                <Menu.Item key="setting:6">Option 6</Menu.Item>
-                <Menu.Item key="setting:7">Option 7</Menu.Item>
-                <Menu.Item key="setting:8">Option 8</Menu.Item>
-                <Menu.Item key="setting:9">Option 9</Menu.Item>
-                <Menu.Item key="setting:10">Option 10</Menu.Item>
-                <Menu.Item key="setting:11">Option 11</Menu.Item>
-                <Menu.Item key="setting:12">Option 12</Menu.Item>
-                <Menu.Item key="setting:13">Option 13</Menu.Item>
-                <Menu.Item key="setting:14">Option 14</Menu.Item>
-                <Menu.Item key="setting:15">Option 15</Menu.Item>
+                <Menu.Item key="setting:3">Organization 3</Menu.Item>
+                <Menu.Item key="setting:4">Organization 4</Menu.Item>
+                <Menu.Item key="setting:5">Organization 5</Menu.Item>
+                <Menu.Item key="setting:6">Organization 6</Menu.Item>
+                <Menu.Item key="setting:7">Organization 7</Menu.Item>
+                <Menu.Item key="setting:8">Organization 8</Menu.Item>
+                <Menu.Item key="setting:9">Organization 9</Menu.Item>
+                <Menu.Item key="setting:10">Organization 10</Menu.Item>
+                <Menu.Item key="setting:11">Organization 11</Menu.Item>
+                <Menu.Item key="setting:12">Organization 12</Menu.Item>
+                <Menu.Item key="setting:13">Organization 13</Menu.Item>
+                <Menu.Item key="setting:14">Organization 14</Menu.Item>
+                <Menu.Item key="setting:15">Organization 15</Menu.Item>
             </Menu.ItemGroup>
         </Menu>
 );

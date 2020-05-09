@@ -1,14 +1,9 @@
 @import '~antd/dist/antd.css';
 
 .layout-content {
-    padding: 0 50px;
-}
-
-.content {
-  background: #fff;
-  padding: 24px;
-  min-height: 280px;
-  margin: 24px 0
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: auto;
 }
 
 .navbar {
