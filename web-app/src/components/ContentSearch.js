@@ -3,7 +3,8 @@ import React from 'react'
 import { Input, Dropdown, Menu, Card, Space, Avatar, Typography }  from 'antd';
 import { RiseOutlined } from '@ant-design/icons'
 
-const card = (
+function TrendCard(props) {
+    return (
     <div style={{ 'padding-top': '10px', 'padding-bottom': '10px'}}>
         <Card hoverable size="small" bordered={false} style={{ width: 285 }} >
             <Space>
@@ -20,24 +21,26 @@ const card = (
             </Space>
         </Card>
     </div>
+    )
 
-)
+}
 
-const menu = (
+function TrendMenu(props) {
+    return (
         <Menu style={{ height:'400px', 'overflow-y':'auto' }}>
             <Menu.ItemGroup title="Trending Today">
-                {card}
-                {card}
-                {card}
-                {card}
+                <TrendCard />
+                <TrendCard />
+                <TrendCard />
             </Menu.ItemGroup>
         </Menu>
-);
+    );
+}
 
 class ContentSearch extends React.Component {
     render () {
         return (
-            <Dropdown overlay={menu} >
+            <Dropdown overlay={TrendMenu} >
                 <Input.Search size="large" placeholder="Search" style={{ width: 300 }}/>
             </Dropdown>
         )
