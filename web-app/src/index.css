@@ -1,8 +1,6 @@
 @import '~antd/dist/antd.css';
 
 .layout-content {
-    padding-top: 24px;
-    padding-bottom: 24px;
     margin: auto;
 }
 
