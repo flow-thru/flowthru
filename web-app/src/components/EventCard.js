@@ -15,7 +15,7 @@ class EventCard extends React.Component {
                     <Typography.Text>Organization Name</Typography.Text>
                 </Space>
 
-                <div style={{'padding-top':'5px', 'padding-bottom': '10px'}}>
+                <Card size='small' bordered={false}>
                     <img style={{float:'right', 'padding-left':'10px'}}
                         alt="example"
                         src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
@@ -23,7 +23,7 @@ class EventCard extends React.Component {
                     <Typography.Title level={4}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </Typography.Title>
-                </div>
+                </Card>
 
                 <Space size='large'>
                     <span><CommentOutlined key="comments"/> 253 </span>
