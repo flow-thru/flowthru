@@ -14,7 +14,7 @@ ReactDOM.render((
     <Router>
         <Nav
             currentPage="Home"
-            username="oscarolazabal"
+            username="username"
             userIcon={< UserOutlined />}
         />
 

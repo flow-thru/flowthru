@@ -16,7 +16,7 @@ class Nav extends React.Component {
                 {/* Logo */}
                 <Menu.Item disabled={true} className='navbaritem' style={{cursor: 'auto'}} >
                     <div>
-                        <a href="#">
+                        <a href="http://localhost:5000">
                             <img src={logo} width="40px" alt="logo" />
                             <img src={banner} width="125px" alt="banner" />
                         </a>
