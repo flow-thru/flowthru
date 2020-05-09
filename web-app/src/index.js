@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import Nav from './components/Nav'
-import Home from './pages/Home'
-import "./index.css";
-import * as serviceWorker from "./serviceWorker";
-
 import { UserOutlined } from '@ant-design/icons'
 import { Layout } from 'antd'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
+import "./index.css";
+import * as serviceWorker from "./serviceWorker";
+import Nav from './layouts/Nav'
+import Home from './pages/Home'
+
+
 
 ReactDOM.render((
     <Router>

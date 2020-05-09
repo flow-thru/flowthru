@@ -1,8 +1,8 @@
 
 import React from 'react'
 import { Menu, Avatar } from 'antd'
-import ContentSearch from './ContentSearch'
-import ContentSelect from './ContentSelect'
+import ContentSearch from '../components/ContentSearch'
+import ContentSelect from '../components/ContentSelect'
 import logo from '../assets/img/logo.png'
 import banner from '../assets/img/banner.png'
 import { BellOutlined, MessageOutlined, EditOutlined } from '@ant-design/icons'
@@ -16,7 +16,7 @@ class Nav extends React.Component {
                 {/* Logo */}
                 <Menu.Item disabled={true} className='navbaritem' style={{cursor: 'auto'}} >
                     <div>
-                        <a href="http://localhost:5000">
+                        <a href="http://localhost:3000">
                             <img src={logo} width="40px" alt="logo" />
                             <img src={banner} width="125px" alt="banner" />
                         </a>
