@@ -8,24 +8,24 @@ function PageMenu(props) {
     return (
         <Menu style={{ height:'350px', 'overflow-y':'auto' }}>
             <Menu.ItemGroup title="Feeds">
-                <Menu.Item key="Home" icon={< HomeOutlined />}>Home</Menu.Item>
-                <Menu.Item key="Popular" icon={<RiseOutlined />}>Popular</Menu.Item>
-                <Menu.Item key="Top Organizations" icon={<OrderedListOutlined />}>Top Organizations</Menu.Item>
+                <Menu.Item key="home" icon={< HomeOutlined />}>Home</Menu.Item>
+                <Menu.Item key="popular" icon={<RiseOutlined />}>Popular</Menu.Item>
+                <Menu.Item key="communities" icon={<OrderedListOutlined />}>Top Communities</Menu.Item>
             </Menu.ItemGroup>
-            <Menu.ItemGroup title="My Organizations">
-                <Menu.Item key="setting:3">Organization 3</Menu.Item>
-                <Menu.Item key="setting:4">Organization 4</Menu.Item>
-                <Menu.Item key="setting:5">Organization 5</Menu.Item>
-                <Menu.Item key="setting:6">Organization 6</Menu.Item>
-                <Menu.Item key="setting:7">Organization 7</Menu.Item>
-                <Menu.Item key="setting:8">Organization 8</Menu.Item>
-                <Menu.Item key="setting:9">Organization 9</Menu.Item>
-                <Menu.Item key="setting:10">Organization 10</Menu.Item>
-                <Menu.Item key="setting:11">Organization 11</Menu.Item>
-                <Menu.Item key="setting:12">Organization 12</Menu.Item>
-                <Menu.Item key="setting:13">Organization 13</Menu.Item>
-                <Menu.Item key="setting:14">Organization 14</Menu.Item>
-                <Menu.Item key="setting:15">Organization 15</Menu.Item>
+            <Menu.ItemGroup title="My Communities">
+                <Menu.Item key="setting:3">Community 3</Menu.Item>
+                <Menu.Item key="setting:4">Community 4</Menu.Item>
+                <Menu.Item key="setting:5">Community 5</Menu.Item>
+                <Menu.Item key="setting:6">Community 6</Menu.Item>
+                <Menu.Item key="setting:7">Community 7</Menu.Item>
+                <Menu.Item key="setting:8">Community 8</Menu.Item>
+                <Menu.Item key="setting:9">Community 9</Menu.Item>
+                <Menu.Item key="setting:10">Community 10</Menu.Item>
+                <Menu.Item key="setting:11">Community 11</Menu.Item>
+                <Menu.Item key="setting:12">Community 12</Menu.Item>
+                <Menu.Item key="setting:13">Community 13</Menu.Item>
+                <Menu.Item key="setting:14">Community 14</Menu.Item>
+                <Menu.Item key="setting:15">Community 15</Menu.Item>
             </Menu.ItemGroup>
         </Menu>
     );
