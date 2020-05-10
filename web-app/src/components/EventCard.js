@@ -8,7 +8,7 @@ class EventCard extends React.Component {
             <Card hoverable size='small' >
                 <Space>
                     <Avatar size='small' />
-                    <Typography.Text>Organization Name</Typography.Text>
+                    <Typography.Text>Community Name</Typography.Text>
                 </Space>
 
                 <Card size='small' bordered={false}>

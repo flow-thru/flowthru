@@ -5,7 +5,7 @@ import ContentSearch from '../components/ContentSearch'
 import ContentSelect from '../components/ContentSelect'
 import AvatarMenu from '../components/AvatarMenu'
 import logo from '../assets/img/banner_logo.svg'
-import { BellOutlined, MessageOutlined, EditOutlined } from '@ant-design/icons'
+import { BellOutlined, MessageOutlined, PlusOutlined } from '@ant-design/icons'
 
 function Nav(props){
     const componentRef = useRef()
@@ -37,9 +37,9 @@ function Nav(props){
             {/* Profile */}
             <Col className='navitem'>
                     <Space size='middle'>
-                        <Button shape='circle' style={{border:'none'}} icon={<BellOutlined />}/>
+                        <Button shape='circle' style={{border:'none'}} icon={<PlusOutlined />}/>
                         <Button shape='circle' style={{border:'none'}} icon={<MessageOutlined />}/>
-                        <Button shape='circle' style={{border:'none'}} icon={<EditOutlined />}/>
+                        <Button shape='circle' style={{border:'none'}} icon={<BellOutlined />}/>
                         <AvatarMenu 
                             username={props.username}
                         />

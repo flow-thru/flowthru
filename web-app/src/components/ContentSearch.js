@@ -23,7 +23,7 @@ function TrendCard(props) {
                     </div>
                 <Space>
                     <Avatar size='small' />
-                    <Typography.Text>Organization Name</Typography.Text>
+                    <Typography.Text>Community Name</Typography.Text>
                 </Space>
             </Card>
             </div>
