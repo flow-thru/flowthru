@@ -1,14 +1,17 @@
 @import '~antd/dist/antd.css';
 
-.layout-content {
-    margin: auto;
+.content {
+  background-color: whitesmoke;
 }
 
 .navbar {
-    padding-left: 50px;
-    padding-right: 50px;
+  height: 75px;
 }
 
 .navbaritem {
   padding: 12px;
+}
+
+.footer {
+  text-align: center;
 }

@@ -8,6 +8,7 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import Nav from './layouts/Nav'
 import Home from './pages/Home'
+import Footer from './layouts/Footer'
 
 
 
@@ -23,7 +24,7 @@ ReactDOM.render((
             <Route path="/" component={Home} />
         </Switch>
 
-        <Layout.Footer style={{ textAlign: 'center' }}>Flowthru ©2020</Layout.Footer>
+        <Footer />
     </Router>
 ), document.getElementById("root"));
 

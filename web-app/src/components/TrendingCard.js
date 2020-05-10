@@ -21,10 +21,7 @@ const data = [
 class TrendingCard extends React.Component {
     render () {
         return (
-            <Card
-                style={{ width: 350 }}
-                cover={<img alt="example" src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" />}
-            >
+            <Card cover={<img alt="example" src="https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png" />} >
                 <Typography.Title level={4}>Trending Organizations</Typography.Title>
                 <List
                     itemLayout="horizontal"

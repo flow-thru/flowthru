@@ -1,20 +1,20 @@
 
 import React from 'react'
-import { Input, Dropdown, Menu, Card, Space, Avatar, Typography }  from 'antd';
+import { Input, Dropdown, Menu, Card, Space, Avatar, Typography, Button }  from 'antd';
 import { RiseOutlined } from '@ant-design/icons'
 
 function TrendCard(props) {
     return (
     <div style={{ 'padding-top': '10px', 'padding-bottom': '10px'}}>
-        <Card hoverable size="small" bordered={false} style={{ width: 285 }} >
-            <Space>
-                <Typography.Text><RiseOutlined /> Tag </Typography.Text>
-            </Space>
-            <div style={{'padding-top':'5px', 'padding-bottom': '10px'}}>
-                <Typography.Text >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </Typography.Text>
-            </div>
+        <Card hoverable size="small" bordered={false} >
+            <Typography.Text><RiseOutlined /> Tag </Typography.Text>
+            <Card.Meta
+                title = {
+                <div style={{'padding-top':'5px', 'padding-bottom': '10px'}}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                </div>
+                }
+            />
             <Space>
                 <Avatar size='small' />
                 <Typography.Text>Organization Name</Typography.Text>
@@ -41,7 +41,7 @@ class ContentSearch extends React.Component {
     render () {
         return (
             <Dropdown overlay={TrendMenu} >
-                <Input.Search size="large" placeholder="Search" style={{ width: 300 }}/>
+                <Input.Search size="large" placeholder="Search" style={{width:'100%'}}/>
             </Dropdown>
         )
     };
