@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { UserOutlined } from '@ant-design/icons'
-import { Layout } from 'antd'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import "./index.css";

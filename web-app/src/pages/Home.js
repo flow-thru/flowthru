@@ -2,7 +2,7 @@
 import React from 'react'
 import HomeFeed from '../layouts/HomeFeed'
 import HomeSidebar from '../layouts/HomeSidebar'
-import { Layout, Row, Col, Space } from 'antd'
+import { Row, Col } from 'antd'
 
 class Home extends React.Component {
     render () {

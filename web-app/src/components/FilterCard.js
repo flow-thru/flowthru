@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Card, Space, Radio, Input, Row, Col, Select } from 'antd';
+import { Card, Space, Radio, Row, Col, Select } from 'antd';
 import { FireOutlined, TeamOutlined, HistoryOutlined } from '@ant-design/icons';
 
 const children = [];

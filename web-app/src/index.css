@@ -4,12 +4,9 @@
   background-color: whitesmoke;
 }
 
-.navbar {
-  height: 75px;
-}
-
-.navbaritem {
-  padding: 12px;
+.navitem {
+  padding-left: 10px;
+  padding-right: 10;
 }
 
 .footer {

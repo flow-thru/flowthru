@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Dropdown, Menu, Avatar, Button, Divider } from 'antd';
+import { Dropdown, Menu, Avatar } from 'antd';
 
 
 function PageMenu(props) {
@@ -19,7 +19,7 @@ class ContentSelect extends React.Component {
     render () {
         return (
             <Dropdown overlay={PageMenu(this.props)}>
-                <Avatar size="large" icon={this.props.userIcon} />
+                <Avatar style={{cursor:'pointer' }} size="large" icon={this.props.userIcon} />
             </Dropdown>
         )
     };
