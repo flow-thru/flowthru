@@ -35,8 +35,8 @@ class ContentSelect extends React.Component {
     render () {
         return (
             <Dropdown overlay={PageMenu} >
-                <Button size='large' style={{ width:250 }}>
-                        <span style={{float:'left'}}><HomeOutlined />Home</span>  <span style={{float:'right'}}><CaretDownOutlined /></span>
+                <Button size='large' block={true}>
+                        <span style={{float:'left'}}><HomeOutlined /> Home</span>  <span style={{float:'right'}}><CaretDownOutlined /></span>
                 </Button>
             </Dropdown>
         )

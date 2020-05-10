@@ -4,23 +4,29 @@ import { Input, Dropdown, Menu, Card, Space, Avatar, Typography }  from 'antd';
 import { RiseOutlined } from '@ant-design/icons'
 
 function TrendCard(props) {
+    var s1  = {
+        'padding-top':5,
+        'padding-bottom':5,
+        width: props.width - 50,
+        margin: 'auto'
+    }
+    var s2  = {
+        'padding-top':5,
+        'padding-bottom':5,
+    }
     return (
-    <div style={{ 'padding-top': '10px', 'padding-bottom': '10px'}}>
-        <Card hoverable size="small" bordered={false} style={{ width: 285 }} >
-            <Space>
+            <div style={s1}>
+            <Card hoverable size="small" bordered={false}>
                 <Typography.Text><RiseOutlined /> Tag </Typography.Text>
-            </Space>
-            <div style={{'padding-top':'5px', 'padding-bottom': '10px'}}>
-                <Typography.Text >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </Typography.Text>
+                    <div style={s2}>
+                        Lorem ipsum dolor sit amet Lorem ipsum doum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolum dolor sit amet Lorem ipsum door sit amet Lorem ipsum dolor sit amet 
+                    </div>
+                <Space>
+                    <Avatar size='small' />
+                    <Typography.Text>Organization Name</Typography.Text>
+                </Space>
+            </Card>
             </div>
-            <Space>
-                <Avatar size='small' />
-                <Typography.Text>Organization Name</Typography.Text>
-            </Space>
-        </Card>
-    </div>
     )
 
 }
@@ -29,22 +35,21 @@ function TrendMenu(props) {
     return (
         <Menu style={{ height:'400px', 'overflow-y':'auto' }}>
             <Menu.ItemGroup title="Trending Today">
-                <TrendCard />
-                <TrendCard />
-                <TrendCard />
+                <TrendCard width={props.width}/>
+                <TrendCard width={props.width}/>
+                <TrendCard width={props.width}/>
             </Menu.ItemGroup>
         </Menu>
     );
 }
 
-class ContentSearch extends React.Component {
-    render () {
-        return (
-            <Dropdown overlay={TrendMenu} >
-                <Input.Search size="large" placeholder="Search" style={{ width: 300 }}/>
-            </Dropdown>
-        )
-    };
+
+function ContentSearch(props) {
+    return (
+        <Dropdown overlay={TrendMenu(props)} >
+                <Input.Search  size="large" placeholder="Search" style={{width:'100%'}}/>
+        </Dropdown>
+    )
 }
 
 export default ContentSearch;

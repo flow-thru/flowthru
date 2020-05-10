@@ -1,56 +1,85 @@
 
-import React from 'react'
-import { Menu, Avatar } from 'antd'
+import React, {useRef, useEffect, useState } from 'react'
+import { Row, Col, Space, Button } from 'antd'
 import ContentSearch from '../components/ContentSearch'
 import ContentSelect from '../components/ContentSelect'
-import logo from '../assets/img/logo.png'
-import banner from '../assets/img/banner.png'
+import AvatarMenu from '../components/AvatarMenu'
+import logo from '../assets/img/banner_logo.svg'
 import { BellOutlined, MessageOutlined, EditOutlined } from '@ant-design/icons'
 
-const {SubMenu} = Menu
+function Nav(props){
+    const componentRef = useRef()
+    const { width,  } = useContainerDimensions(componentRef)
+    return (
+        <Row style={{minHeight:80 , paddingRight:20, paddingLeft:20, paddingBottom:10}} align='middle'>
+            {/* Logo */}
+            <Col className='navitem' flex={1}>
+                <div>
+                    <a href="http://localhost:3000">
+                        <img src={logo} width="200px" alt="banner" />
+                    </a>
+                </div>
+            </Col>
 
-class Nav extends React.Component {
-    render() {
-        return (
-            <Menu mode="horizontal" className='navbar'>
-                {/* Logo */}
-                <Menu.Item disabled={true} className='navbaritem' style={{cursor: 'auto'}} >
-                    <div>
-                        <a href="http://localhost:3000">
-                            <img src={logo} width="40px" alt="logo" />
-                            <img src={banner} width="125px" alt="banner" />
-                        </a>
-                    </div>
-                </Menu.Item>
+            {/* Page Select */}
+            <Col className='navitem' flex={4}>
+                <ContentSelect />
+            </Col>
 
-                {/* Page Select */}
-                <Menu.Item disabled={true} className='navbaritem' style={{cursor: 'auto'}}>
-                    <ContentSelect />
-                </Menu.Item>
-
-                {/* Search Bar */}
-                <Menu.Item disabled={true} className='navbaritem' style={{cursor: 'auto'}}>
-                    <ContentSearch />
-                </Menu.Item>
+            {/* Search Bar */}
+            <Col className='navitem' flex={5}>
+                <div ref={componentRef}>
+                    <ContentSearch width={width} />
+                </div>
+            </Col>
 
 
-                {/* Profile */}
-                <SubMenu
-                    title= {<Avatar size="large" icon={this.props.userIcon} />}
-                    style={{float: 'right'}}  className='navbaritem'>
-                    <Menu.ItemGroup title={this.props.username}>
-                        <Menu.Item key="profile">Profile</Menu.Item>
-                        <Menu.Item key="events">User Settings</Menu.Item>
-                        <Menu.Item key="logout">Log Out</Menu.Item>
-                    </Menu.ItemGroup>
-                </SubMenu>
+            {/* Actions */}
+            <Col className='navitem' flex={5}>
+                <div style={{width:'50%', margin:'auto'}}>
+                    <Space>
+                        <Button shape='circle' style={{border:'none'}} icon={<BellOutlined />}/>
+                        <Button shape='circle' style={{border:'none'}} icon={<MessageOutlined />}/>
+                        <Button shape='circle' style={{border:'none'}} icon={<EditOutlined />}/>
+                    </Space>
+                </div>
+            </Col>
 
-                <Menu.Item icon={<BellOutlined />} className='navbaritem' style={{float: 'right'}}/>
-                <Menu.Item icon={<MessageOutlined />} className='navbaritem' style={{float: 'right'}}/>
-                <Menu.Item icon={<EditOutlined />} className='navbaritem' style={{float: 'right'}}/>
-            </Menu>
-        );
-    }
+            {/* Profile */}
+            <Col className='navitem'>
+                <div style={{width:'50%', margin:'auto'}}>
+                    <AvatarMenu 
+                        username={props.username}
+                    />
+                </div>
+            </Col>
+        </Row>
+    );
 }
+
+// Used for dropdown resize of ContentSearch Component
+export const useContainerDimensions = myRef => {
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
+    useEffect(() => {
+        const getDimensions = () => ({
+            width: myRef.current.offsetWidth,
+            height: myRef.current.offsetHeight
+        })
+        const handleResize = () => {
+            setDimensions(getDimensions())
+        }
+
+        if (myRef.current) {
+            setDimensions(getDimensions())
+        }
+
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [myRef])
+    return dimensions;
+};
 
 export default Nav

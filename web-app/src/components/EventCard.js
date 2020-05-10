@@ -5,11 +5,7 @@ import { CommentOutlined, ShareAltOutlined, StarOutlined } from '@ant-design/ico
 class EventCard extends React.Component {
    render () {
        return (
-            <Card
-                hoverable
-                size='small'
-                style={{ width: 700 }}
-            >
+            <Card hoverable size='small' >
                 <Space>
                     <Avatar size='small' />
                     <Typography.Text>Organization Name</Typography.Text>

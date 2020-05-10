@@ -2,25 +2,21 @@
 import React from 'react'
 import HomeFeed from '../layouts/HomeFeed'
 import HomeSidebar from '../layouts/HomeSidebar'
-import { Layout, Row, Col, Space } from 'antd'
+import { Row, Col } from 'antd'
 
 class Home extends React.Component {
     render () {
         return (
-            <Layout>
-                <div className='layout-content'>
-                    <Row justify='center' style={{'padding-top': '16px'}}>
-                        <Space align='start' size='middle'>
-                        <Col span={16}>
-                            <HomeFeed />
-                        </Col>
-                        <Col span={8}>
-                            <HomeSidebar />
-                        </Col>
-                        </Space>
-                    </Row>
-                </div>
-            </Layout>
+            <div className='content'>
+                <Row className='content' justify='center' gutter={[16, 16]}>
+                    <Col flex={2} style={{maxWidth: 700}}>
+                        <HomeFeed />
+                    </Col>
+                    <Col flex={2} style={{maxWidth: 400}}>
+                        <HomeSidebar />
+                    </Col>
+                </Row>
+            </div>
         )};
 }
 
