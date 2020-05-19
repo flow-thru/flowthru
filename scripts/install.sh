@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo Building database...
+docker container rm -f flowthru-db > /dev/null 2>&1
+docker rmi -f flowthru-db > /dev/null 2>&1
+docker build internal/repository/pg -t flowthru-db
+
+echo Setting up database...
+docker run -d --name flowthru-db -p 127.0.0.1:5432:5432 flowthru-db
+docker stop flowthru-db  > /dev/null 2>&1
+
+echo Installing Go Modules...
+go get -v -t -d ./...

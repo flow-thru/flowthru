@@ -6,8 +6,8 @@
   "author": "flowthru",
   "license": "MIT",
   "scripts": {
-    "install": "docker container rm -f flowthru-db; docker rmi -f flowthru-db; docker build internal/repository/pg -t flowthru-db; docker run -d --name flowthru-db -p 127.0.0.1:5432:5432 flowthru-db; docker stop flowthru-db; go get -v -t -d ./...",
-    "start": "docker start flowthru-db; sleep 5; FLOWTHRU_DB_HOST=localhost FLOWTHRU_DB_PORT=5432 FLOWTHRU_DB_USER=user FLOWTHRU_DB_PASSWORD=password FLOWTHRU_DB_NAME=test go run cmd/user/main.go; docker stop flowthru-db",
-    "test": "docker start flowthru-db; sleep 5; FLOWTHRU_DB_HOST=localhost FLOWTHRU_DB_PORT=5432 FLOWTHRU_DB_USER=user FLOWTHRU_DB_PASSWORD=password FLOWTHRU_DB_NAME=test go test -v ./...; docker stop flowthru-db"
+    "install": "sh scripts/install.sh",
+    "start": "sh scripts/start.sh",
+    "test": "sh scripts/test.sh"
   }
 }
