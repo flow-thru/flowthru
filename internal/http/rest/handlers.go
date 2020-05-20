@@ -5,6 +5,8 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// UserRepository is an interface that will be utilized by the user routers
+// in order to perform CRUD operations on user data.
 type UserRepository interface {
 	GetUser(int) (*models.User, error)
 	InsertUser(*models.User) (int, error)

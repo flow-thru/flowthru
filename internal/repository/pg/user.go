@@ -2,6 +2,8 @@ package pg
 
 import "github.com/flow-thru/flowthru/internal/models"
 
+// GetUser is a method of type Database. It takes in a user ID and
+// returns the user row corresponding to that ID.
 func (db *Database) GetUser(userID int) (*models.User, error) {
 	sqlStatement := `
 	SELECT user_id, username 
@@ -16,6 +18,9 @@ func (db *Database) GetUser(userID int) (*models.User, error) {
 	return user, nil
 }
 
+// InsertUser is a method of type Database. It takes in a new User and
+// returns the user ID if the user was sucessfully inserted into the
+// repository.
 func (db *Database) InsertUser(user *models.User) (int, error) {
 	sqlStatement := `
 	INSERT INTO users (username)
