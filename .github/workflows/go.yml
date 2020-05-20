@@ -14,7 +14,7 @@ on:
 
 jobs:
   user:
-    name: Go Users
+    name: User Service
     runs-on: ubuntu-latest
     steps:
     - name: Set up Go 1.14
@@ -38,11 +38,11 @@ jobs:
     - name: Install dependencies
       run: go get -v -t -d ./...
 
-    - name: Build User
+    - name: Build User Service
       working-directory: ./cmd/user
       run: go build -o flowthru.out
 
-    - name: Run User Tests
+    - name: Run User Service Tests
       env:
         FLOWTHRU_DB_HOST: localhost
         FLOWTHRU_DB_PORT: 5432
