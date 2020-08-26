@@ -44,7 +44,7 @@ func main() {
 
 	// Run our server in a goroutine so that it doesn't block.
 	go func() {
-		log.Println("Runnign user service at 0.0.0.0:5000")
+		log.Println("Running user service at 0.0.0.0:5000")
 		if err := srv.ListenAndServe(); err != nil {
 			log.Println(err)
 		}
